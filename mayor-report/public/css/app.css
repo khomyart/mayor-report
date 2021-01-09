@@ -26,8 +26,6 @@
     height: 200px;
     padding: 30px;
     transition: all 0.1s ease-in-out;
-    -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
     box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
     position: relative;
 }
@@ -44,7 +42,10 @@
 .report-card:hover {
     transform: scale(1.015);
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .report-card-banner {
@@ -56,10 +57,11 @@
     -webkit-user-drag: none;
 }
 
-.footer-image{
+.logo-lutsk {
 
 }
 
 .footer {
     height: 200px;
 }
+
