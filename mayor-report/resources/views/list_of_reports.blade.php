@@ -2,6 +2,15 @@
 
 @section('title', 'Звіти голови Луцької міської ради')
 
+@section('css_import')
+    @parent
+    <link href="{{ asset('css/list_of_reports.css') }}" rel="stylesheet">
+@endsection
+
+@section('javascript_import')
+    @parent
+@endsection
+
 @php
     $reports =
     [
@@ -23,6 +32,7 @@
             'url' => 'report_2020',
             'banner' => '2020.png'
         ],
+
         [
             'year' => 2023,
             'published' => '2 лютого 2024 року',
@@ -40,13 +50,13 @@
             'published' => '2 лютого 2026 року',
             'url' => 'report_2021',
             'banner' => '2021.png'
-        ],
+        ]
     ];
 @endphp
 
 @section('content')
-    <div class="container">
-        <div class="row mt-4 d-flex justify-content-end align-items-center logo-holder ">
+    <div class="container pt-5 d-flex flex-column" style="height: 100%">
+        <div class="row d-flex justify-content-end align-items-center logo-holder mb-2">
             <div class="col-5 d-flex justify-content-end align-items-center">
                 <img class="logo-image-holder p-1" src="{{ asset('img/Herb_Lutsk.svg') }}" alt="">
             </div>
@@ -59,9 +69,9 @@
                 </p>
             </div>
         </div>
-        <div class="row mt-5 d-flex align-items-center flex-column justify-content-center">
+        <div class="row mt-5 d-flex align-items-center flex-column justify-content-start">
             @foreach($reports as $report)
-                <div class="col-6 report-card mb-4 bg-white shadow rounded"
+                <div class="col-7 report-card mb-4 bg-white shadow rounded"
                      onclick="location.href='{{ route($report['url']) }}';">
                     <p class="mb-4">{{ $report['year'] }}</p>
                     <p>Опубліковано: {{ $report['published'] }}</p>
@@ -70,7 +80,7 @@
                 </div>
             @endforeach
         </div>
-        <div class="row mt-5 d-flex align-items-center flex-column justify-content-center">
+        <div class="row mt-2 d-flex align-items-center flex-column justify-content-center">
             <div class="col-7 mt-2 d-flex align-items-center justify-content-center footer">
                 <img class="footer-image" src="{{ asset('img/report_list_footer.png') }}" alt="">
             </div>

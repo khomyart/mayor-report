@@ -4,64 +4,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.logo-holder {
-    height: 110px;
+body, html {
+    height: 100%;
 }
 
-.logo-image-holder {
-    height: 90px;
+.h-100 {
+    height: 100%;
 }
 
-.logo-text-holder {
-    border-left: 2px solid black;
-    height: 90px;
-}
 
-.logo-text-holder p {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.report-card {
-    height: 200px;
-    padding: 30px;
-    transition: all 0.1s ease-in-out;
-    box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-.report-card p:nth-child(1) {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.report-card p:nth-child(2) {
-    font-size: 1rem;
-}
-
-.report-card:hover {
-    transform: scale(1.015);
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-
-.report-card-banner {
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(-100%, -100%);
-    width: 300px;
-    -webkit-user-drag: none;
-}
-
-.logo-lutsk {
-
-}
-
-.footer {
-    height: 200px;
-}
 

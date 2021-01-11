@@ -1,0 +1,46 @@
+.view {
+    height: 200px;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    user-select: none;
+    cursor:pointer;
+}
+
+.view-text p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.8rem;
+    animation-duration: 0.7s;
+    animation-name: fade-out;
+}
+
+.view-text p:nth-child(2){
+    opacity: 1;
+    animation-duration: 0.7s;
+    animation-name: fade-out;
+}
+
+.view:hover {
+    transform: scale(1.015);
+}
+
+.view-image {
+    height: 100%;
+    /*transition: all 3s ease-in-out;*/
+}
+
+/*.view:hover .view-image{*/
+/*    transform: rotateY(180deg);*/
+/*}*/
+
+@keyframes fade-out {
+    from {
+        transform: translate(0px,10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
