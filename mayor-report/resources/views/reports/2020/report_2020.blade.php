@@ -29,7 +29,8 @@
             'name' => 'Звіт — книжка',
             'description' => 'Представлення звіту Луцької міської ради у вигляді електронної книги (pdf)',
             'thumbnail' => ['report_view_selection_book_1.png', 'report_view_selection_book_2.png'],
-            'url' => 'report_2020_pdf_book' //url name for route()
+            'url' => 'list_of_reports' //url name for route()
+            //'url' => 'report_2020_pdf_book' //url name for route()
         ],
 
     ]
@@ -40,12 +41,13 @@
         <div class="row d-flex flex-column justify-content-center align-items-center h-100">
             @foreach($list_of_views as $view)
                 <div class="col-7 view rounded shadow bg-white mb-4 d-flex p-2"
-                     onmouseenter="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][1]) }}', 1, 'enter')"
-                     onmouseleave="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}', 1, 'leave')"
+                     onmouseenter="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][1]) }}', 'enter')"
+                     onmouseleave="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}', 'leave')"
+                     onclick="location.href='{{ route($view['url']) }}';"
                 >
                     <div class="col-4 d-flex justify-content-center h-100 p-4">
                         <img id="{{ $view['url'] }}" src="{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}" alt=""
-                             class="view-image shadow" i-rotation="0">
+                             class="view-image shadow">
                     </div>
                     <div class="col-8 h-100 p-2 view-text">
                         <p>{{ $view['name'] }}</p>
