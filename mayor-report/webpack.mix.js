@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/report_view_selection.js', 'public/js')
+    .js('resources/js/report_presentation.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css')
     .postCss('resources/css/list_of_reports.css', 'public/css')
     .postCss('resources/css/report_view_selection.css', 'public/css')

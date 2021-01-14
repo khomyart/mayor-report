@@ -1,4 +1,18 @@
 let intervals = [];
+let elementsHolder = [];
+
+listOfViews.forEach((e, i) => {
+    elementsHolder[i] = document.getElementById(e['id']);
+    let nestedImgElement = elementsHolder[i].childNodes[1].childNodes[1];
+    let imageSrcEnter =  `${e['thumbnail_prefix']}/${e['thumbnail'][1]}`
+    let imageSrcLeave =  `${e['thumbnail_prefix']}/${e['thumbnail'][0]}`
+    elementsHolder[i].addEventListener('mouseenter', e => {
+        changeImage(nestedImgElement, imageSrcEnter, 'enter')
+    })
+    elementsHolder[i].addEventListener('mouseleave', e => {
+        changeImage(nestedImgElement, imageSrcLeave, 'leave')
+    })
+})
 
 function controlledElement(id, rotationValueY, animationStage, intervalID, imageUrl) {
     this.id = id;
@@ -8,7 +22,7 @@ function controlledElement(id, rotationValueY, animationStage, intervalID, image
     this.imageUrl = imageUrl;
 }
 
-function changeImage(element, imageUrl, animationDuration, animationStage) {
+function changeImage(element, imageUrl, animationStage) {
     let elementId = element.getAttribute('id');
 
     if (intervals[elementId] === undefined) {
@@ -16,7 +30,6 @@ function changeImage(element, imageUrl, animationDuration, animationStage) {
     }
 
     if (animationStage === 'enter') {
-
         if (intervals[elementId].animationStage === 'leave') {
             intervals[elementId].animationStage = 'enter';
             intervals[elementId].imageUrl = imageUrl;

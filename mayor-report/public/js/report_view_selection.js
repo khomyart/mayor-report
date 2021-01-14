@@ -1,4 +1,21 @@
+/******/ (() => { // webpackBootstrap
+/*!***********************************************!*\
+  !*** ./resources/js/report_view_selection.js ***!
+  \***********************************************/
 var intervals = [];
+var elementsHolder = [];
+listOfViews.forEach(function (e, i) {
+  elementsHolder[i] = document.getElementById(e['id']);
+  var nestedImgElement = elementsHolder[i].childNodes[1].childNodes[1];
+  var imageSrcEnter = "".concat(e['thumbnail_prefix'], "/").concat(e['thumbnail'][1]);
+  var imageSrcLeave = "".concat(e['thumbnail_prefix'], "/").concat(e['thumbnail'][0]);
+  elementsHolder[i].addEventListener('mouseenter', function (e) {
+    changeImage(nestedImgElement, imageSrcEnter, 'enter');
+  });
+  elementsHolder[i].addEventListener('mouseleave', function (e) {
+    changeImage(nestedImgElement, imageSrcLeave, 'leave');
+  });
+});
 
 function controlledElement(id, rotationValueY, animationStage, intervalID, imageUrl) {
   this.id = id;
@@ -58,3 +75,5 @@ function changeImage(element, imageUrl, animationStage) {
     }, 15);
   }
 }
+/******/ })()
+;

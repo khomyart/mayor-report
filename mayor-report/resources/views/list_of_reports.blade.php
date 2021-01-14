@@ -32,7 +32,7 @@
             'url' => 'report_2020',
             'banner' => '2020.png'
         ],
-
+/*
         [
             'year' => 2023,
             'published' => '2 лютого 2024 року',
@@ -45,12 +45,13 @@
             'url' => 'report_2020',
             'banner' => '2020.png'
         ],
+
         [
             'year' => 2025,
             'published' => '2 лютого 2026 року',
             'url' => 'report_2021',
             'banner' => '2021.png'
-        ]
+        ]*/
     ];
 @endphp
 
