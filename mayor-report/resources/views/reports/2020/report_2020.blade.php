@@ -55,7 +55,10 @@
                 <div id="{{ $view['id'] }}" class="col-7 view rounded shadow bg-white mb-4 d-flex p-2"
 {{--                     onmouseenter="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][1]) }}', 'enter')"--}}
 {{--                     onmouseleave="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}', 'leave')"--}}
-                     onclick="location.href='{{ route($view['url']) }}';"
+
+
+
+                     onclick="location.href='@if ($view['id'] == 'book') {{ asset('/reports_pdf/2020.pdf') }} @else {{ route($view['url']) }} @endif';"
                 >
                     <div class="col-4 d-flex justify-content-center h-100 p-4">
                         <img id="{{ $view['url'] }}" src="{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}" alt=""

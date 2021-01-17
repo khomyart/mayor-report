@@ -19078,10 +19078,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/report_presentation_view.css":
-/*!****************************************************!*\
-  !*** ./resources/css/report_presentation_view.css ***!
-  \****************************************************/
+/***/ "./resources/css/report_presentation.css":
+/*!***********************************************!*\
+  !*** ./resources/css/report_presentation.css ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19091,10 +19091,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/report_detail_info_view.css":
-/*!***************************************************!*\
-  !*** ./resources/css/report_detail_info_view.css ***!
-  \***************************************************/
+/***/ "./resources/css/report_detail.css":
+/*!*****************************************!*\
+  !*** ./resources/css/report_detail.css ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19386,8 +19386,8 @@ process.umask = function() { return 0; };
 /******/ 			["./resources/css/app.css"],
 /******/ 			["./resources/css/list_of_reports.css"],
 /******/ 			["./resources/css/report_view_selection.css"],
-/******/ 			["./resources/css/report_presentation_view.css"],
-/******/ 			["./resources/css/report_detail_info_view.css"]
+/******/ 			["./resources/css/report_presentation.css"],
+/******/ 			["./resources/css/report_detail.css"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		

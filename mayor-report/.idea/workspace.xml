@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/reports_pdf/2020.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/report_detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/includes/article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/list_of_reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/list_of_reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/list_of_reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/list_of_reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/report_detail_info_view.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/report_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/report_presentation_view.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/report_presentation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nCbBC6bnefSlnxIYSU7nBrjEVg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="" />
+      <created>1610896881751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610896881751</updated>
+      <workItem from="1610896888275" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

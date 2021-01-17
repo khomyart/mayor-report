@@ -11,13 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix .js('resources/js/app.js', 'public/js')
     .js('resources/js/report_view_selection.js', 'public/js')
     .js('resources/js/report_presentation.js', 'public/js')
+    .js('resources/js/report_detail.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css')
     .postCss('resources/css/list_of_reports.css', 'public/css')
     .postCss('resources/css/report_view_selection.css', 'public/css')
-    .postCss('resources/css/report_presentation_view.css', 'public/css')
-    .postCss('resources/css/report_detail_info_view.css', 'public/css');
+    .postCss('resources/css/report_presentation.css', 'public/css')
+    .postCss('resources/css/report_detail.css', 'public/css');
 
 

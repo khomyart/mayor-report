@@ -1,0 +1,147 @@
+.report-detail-container {
+
+}
+
+.container-fluid {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.chapters-container {
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 60px 60px 30px;
+}
+
+.chapter-map-element {
+    padding: 13px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: transform 0.2s ease-in-out;
+}
+
+.chapter-map-element::before {
+    content: '#';
+    font-weight: 400;
+    padding-right: 5px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.chapter-map-element a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+
+}
+
+.chapter-map-element:hover {
+    transform: translate(1.5%);
+    cursor: pointer;
+}
+
+.chapter-map-element:hover a{
+    color: red;
+}
+
+.content-container {
+    background: white;
+    padding: 0 60px 30px;
+    margin-bottom: 50px;
+}
+
+.section-container {
+    position: relative;
+}
+
+.section-header {
+    padding-top: 40px;
+    line-height: 1.8rem;
+    position: relative;
+}
+
+.section-header-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.section-header-link:hover {
+    color: black;
+}
+
+.section-header-link:before {
+    content: '#';
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: red;
+    margin-right: 20px;
+    position: absolute;
+    left: -1.8rem;
+}
+
+.section-image {
+    width: 100%;
+}
+
+.question-mark-container {
+    margin-top: -0.1rem;
+}
+
+.question-mark-button {
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0);
+    outline: none;
+    color: rgba(255, 0, 0, 0.51);
+    border: none;
+    font-size: 1.3rem;
+}
+
+.question-mark-button:focus {
+    outline: none;
+    color: red;
+}
+
+.question-mark-button:hover {
+    outline: none;
+    color: red;
+}
+
+.question-mark-context-menu {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1.4rem 1.4rem 0.7rem;
+}
+
+
+.question-mark-context-menu-list-item {
+    width: 11rem;
+    margin-bottom: 0.7rem;
+}
+
+.question-mark-context-menu-links {
+    text-decoration: none;
+    color: black;
+}
+
+.question-mark-context-menu-links:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.chart * {
+    font-size: 0.8rem;
+    background: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

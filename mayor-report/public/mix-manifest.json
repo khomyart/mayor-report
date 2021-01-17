@@ -2,8 +2,9 @@
     "/js/app.js": "/js/app.js",
     "/js/report_view_selection.js": "/js/report_view_selection.js",
     "/js/report_presentation.js": "/js/report_presentation.js",
-    "/css/report_detail_info_view.css": "/css/report_detail_info_view.css",
-    "/css/report_presentation_view.css": "/css/report_presentation_view.css",
+    "/js/report_detail.js": "/js/report_detail.js",
+    "/css/report_detail.css": "/css/report_detail.css",
+    "/css/report_presentation.css": "/css/report_presentation.css",
     "/css/report_view_selection.css": "/css/report_view_selection.css",
     "/css/list_of_reports.css": "/css/list_of_reports.css",
     "/css/app.css": "/css/app.css"
