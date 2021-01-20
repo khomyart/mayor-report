@@ -13,6 +13,16 @@
 @endsection
 
 @php
+    $breadcrumbs = [
+        [
+            'name' => 'Перелік звітів',
+            'url' => 'list_of_reports',
+        ],
+        [
+            'name' => '2020'
+        ]
+    ];
+
     $list_of_views =
     [
         [
@@ -50,21 +60,17 @@
 
 @section('content')
     <div class="container h-100">
-        <div class="row d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="row d-flex view-container">
+            @include('includes.breadcrumb', ['breadcrumbs' => $breadcrumbs])
             @foreach($list_of_views as $view)
-                <div id="{{ $view['id'] }}" class="col-7 view rounded shadow bg-white mb-4 d-flex p-2"
-{{--                     onmouseenter="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][1]) }}', 'enter')"--}}
-{{--                     onmouseleave="changeImage(this.childNodes[1].childNodes[1], '{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}', 'leave')"--}}
-
-
-
+                <div id="{{ $view['id'] }}" class="col-9 col-md-10 col-lg-8 col-xl-7 view rounded shadow bg-white mb-2 p-2"
                      onclick="location.href='@if ($view['id'] == 'book') {{ asset('/reports_pdf/2020.pdf') }} @else {{ route($view['url']) }} @endif';"
                 >
-                    <div class="col-4 d-flex justify-content-center h-100 p-4">
+                    <div class="col-12 col-md-4 d-flex justify-content-center p-4">
                         <img id="{{ $view['url'] }}" src="{{ asset('img/report_view_selection/'.$view['thumbnail'][0]) }}" alt=""
                              class="view-image shadow">
                     </div>
-                    <div class="col-8 h-100 p-2 view-text">
+                    <div class="col-12 col-md-8 p-2 view-text">
                         <p>{{ $view['name'] }}</p>
                         <p>{{ $view['description'] }}</p>
                     </div>

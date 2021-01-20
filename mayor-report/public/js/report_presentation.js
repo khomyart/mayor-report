@@ -14,7 +14,7 @@ window.onload = function () {
   slides.forEach(function (e) {
     e.style.height = "".concat(e.offsetWidth / slideRation, "px");
   });
-  slidesContainer.scrollTop = 20;
+  slidesContainer.scrollTop = 1;
   elementsWithResizableFont.forEach(function (e) {
     var fontSizeUnit = slides[0].offsetWidth / 100;
     var fontSizeMultiplier = e.getAttribute('fontSizeMultiplier');
@@ -52,5 +52,46 @@ window.onresize = function () {
     e.style.width = "".concat((widthUnit * widthMultiplier).toFixed(), "px");
   });
 };
+/* show and hide menu with button */
+
+
+var menuButtons = document.querySelectorAll('.menu-button');
+var menuContainer = document.querySelector('.menu-container');
+var navLinks = document.querySelectorAll('.nav-link');
+var isMenuExtended = false;
+var menuAppearingIntervalId;
+var menuAppearingLeftStyleValue = -100;
+menuButtons.forEach(function (menuButton) {
+  menuButton.onclick = function () {
+    if (isMenuExtended) {
+      isMenuExtended = false;
+      clearInterval(menuAppearingIntervalId);
+      menuAppearingIntervalId = setInterval(function () {
+        menuAppearingLeftStyleValue === -100 ? clearInterval(menuAppearingIntervalId) : menuAppearingLeftStyleValue -= 10;
+        menuContainer.style.left = "".concat(menuAppearingLeftStyleValue, "%");
+      }, 25);
+    } else {
+      isMenuExtended = true;
+      clearInterval(menuAppearingIntervalId);
+      menuAppearingIntervalId = setInterval(function () {
+        menuAppearingLeftStyleValue === 0 ? clearInterval(menuAppearingIntervalId) : menuAppearingLeftStyleValue += 10;
+        menuContainer.style.left = "".concat(menuAppearingLeftStyleValue, "%");
+      }, 25);
+    }
+  };
+});
+navLinks.forEach(function (navLink) {
+  navLink.onclick = function () {
+    if (window.innerWidth < 768) {
+      isMenuExtended = false;
+      clearInterval(menuAppearingIntervalId);
+      menuAppearingIntervalId = setInterval(function () {
+        menuAppearingLeftStyleValue === -100 ? clearInterval(menuAppearingIntervalId) : menuAppearingLeftStyleValue -= 10;
+        menuContainer.style.left = "".concat(menuAppearingLeftStyleValue, "%");
+        console.log('-');
+      }, 25);
+    }
+  };
+});
 /******/ })()
 ;

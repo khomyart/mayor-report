@@ -16,13 +16,31 @@
 @endsection
 
 @php
-
-    @endphp
+    $breadcrumbs = [
+         [
+             'name' => 'Перелік звітів',
+             'url' => 'list_of_reports',
+         ],
+         [
+             'name' => '2020',
+             'url' => 'report_2020',
+         ],
+         [
+             'name' => 'Детальний звіт',
+         ]
+     ];
+@endphp
 
 @section('content')
     <div class="container-fluid bg-light">
-        <div class="row d-flex justify-content-center pt-4">
-            <div class="col-6 chapters-container shadow">
+        <div class="row d-flex justify-content-center pt-0 pt-md-4">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 chapters-container shadow">
+                <a href="#" class="to-top-button shadow">
+                    <img src="{{ asset('img/icons/up-arrow-angle.svg') }}" alt="">
+                </a>
+                <div class="row pb-4">
+                    @include('includes.breadcrumb', ['breadcrumbs' => $breadcrumbs])
+                </div>
                 <h3 class="mb-4">
                     Зміст
                 </h3>
@@ -67,45 +85,47 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center pt-4 mb-4">
-            <div class="col-6 content-container shadow">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 content-container shadow">
                 <section class="section-container" id="1">
                     <script>
-                        google.charts.load("current", {packages:['corechart']});
-                        google.charts.setOnLoadCallback(drawChart);
-                        function drawChart() {
-                            var data = google.visualization.arrayToDataTable([
-                                ["Рік", "грн ", { role: "style" } ],
-                                ["2016", 568621.4, "#eb0909"],
-                                ["2017", 689443.9, "#eb0909"],
-                                ["2018", 936059.9, "#eb0909"],
-                                ["2019", 863570.6, "#eb0909"],
-                                ["2020", 1094982.5, "#eb0909"]
-                            ]);
+                        (() => {
+                            google.charts.load("current", {packages:['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ["Рік", "грн ", { role: "style" } ],
+                                    ["2016", 568621.4, "#eb0909"],
+                                    ["2017", 689443.9, "#eb0909"],
+                                    ["2018", 936059.9, "#eb0909"],
+                                    ["2019", 863570.6, "#eb0909"],
+                                    ["2020", 1094982.5, "#eb0909"]
+                                ]);
 
-                            var view = new google.visualization.DataView(data);
-                            view.setColumns([0, 1,
-                                { calc: "stringify",
-                                    sourceColumn: 1,
-                                    type: "string",
-                                    role: "annotation" },
-                                2]);
+                                var view = new google.visualization.DataView(data);
+                                view.setColumns([0, 1,
+                                    { calc: "stringify",
+                                        sourceColumn: 1,
+                                        type: "string",
+                                        role: "annotation" },
+                                    2]);
 
-                            var options = {
-                                title: "Надходження до бюджету міста за 2016-2020 роки",
-                                width: 650,
-                                height: 400,
-                                bar: {groupWidth: "40%"},
-                                legend: { position: "none" },
-                                vAxis: {
-                                    viewWindow: {
-                                        max: 1300000,
-                                        min: 0
+                                var options = {
+                                    title: "Надходження до бюджету міста за 2016-2020 роки",
+                                    width: 650,
+                                    height: 400,
+                                    bar: {groupWidth: "40%"},
+                                    legend: { position: "none" },
+                                    vAxis: {
+                                        viewWindow: {
+                                            max: 1300000,
+                                            min: 0
+                                        }
                                     }
-                                }
-                            };
-                            var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
-                            chart.draw(view, options);
-                        }
+                                };
+                                var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
+                                chart.draw(view, options);
+                            }
+                        })();
                     </script>
                     <h4 class="section-header mb-4">
                         <a class="section-header-link" href="#">Енергозбереження та енергоефективна діяльність

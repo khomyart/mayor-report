@@ -1,5 +1,132 @@
+/*
+Small	            sm	≥576px
+Medium	            md	≥768px
+Large	            lg	≥992px
+Extra large	        xl	≥1200px
+Extra extra large	xxl	≥1400px
+*/
+
+/* sm */
+@media (min-width: 0px){
+    .to-top-button {
+        outline: none;
+        color: white;
+        width: 100%;
+        height: 30px;
+        background: red;
+        text-decoration: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 3px;
+        transition: opacity 0.2s ease-in-out;
+        z-index: 50;
+        opacity: 0;
+        border-radius: 0;
+    }
+
+    .to-top-button img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20px;
+    }
+
+    .chapters-container {
+        padding: 50px 30px 30px;
+        position: relative;
+    }
+
+    .content-container {
+        padding: 0 30px 30px;
+    }
+
+    .section-header-link:before {
+        left: -1.5rem;
+    }
+
+    .breadcrumb {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* md */
+@media (min-width: 577px) {
+
+}
+
+/* lg */
+@media (min-width: 768px) {
+    .to-top-button {
+        width: 55px;
+        height: 55px;
+        top: 30px;
+        right: 30px;
+        border-radius: 50%;
+    }
+
+    .to-top-button img {
+        top: 47%;
+        left: 50%;
+        width: 60%;
+        height: auto;
+    }
+
+    .chapters-container {
+        padding: 50px 40px 30px;
+    }
+
+    .content-container {
+        padding: 0 40px 30px;
+    }
+
+    .section-header-link:before {
+        left: -1.6rem;
+    }
+}
+
+/* xl */
+@media (min-width: 992px){
+    .chapters-container {
+        padding: 50px 45px 30px;
+    }
+
+    .content-container {
+        padding: 0 45px 30px;
+    }
+
+    .section-header-link:before {
+        left: -1.7rem;
+    }
+}
+
+/* xxl */
+@media (min-width: 1400px){
+    .chapters-container {
+        padding: 50px 60px 30px;
+    }
+
+    .content-container {
+        padding: 0 60px 30px;
+    }
+
+    .section-header-link:before {
+        left: -1.8rem;
+    }
+}
+
 .report-detail-container {
 
+}
+
+.to-top-button:focus {
+    color: white;
+}
+
+.to-top-button:hover {
+    color: white;
 }
 
 .container-fluid {
@@ -11,7 +138,6 @@
 .chapters-container {
     background: #ffffff;
     box-sizing: border-box;
-    padding: 60px 60px 30px;
 }
 
 .chapter-map-element {
@@ -48,7 +174,6 @@
 
 .content-container {
     background: white;
-    padding: 0 60px 30px;
     margin-bottom: 50px;
 }
 
@@ -80,7 +205,6 @@
     color: red;
     margin-right: 20px;
     position: absolute;
-    left: -1.8rem;
 }
 
 .section-image {

@@ -9,7 +9,7 @@ window.onload = function () {
     slides.forEach((e)=> {
         e.style.height = `${e.offsetWidth / slideRation}px`;
     })
-    slidesContainer.scrollTop = 20;
+    slidesContainer.scrollTop = 1;
 
     elementsWithResizableFont.forEach(e => {
         let fontSizeUnit = slides[0].offsetWidth / 100;
@@ -53,4 +53,47 @@ window.onresize = function () {
         e.style.width = `${(widthUnit * widthMultiplier).toFixed()}px`;
     })
 }
+
+/* show and hide menu with button */
+let menuButtons = document.querySelectorAll('.menu-button');
+let menuContainer = document.querySelector('.menu-container');
+let navLinks = document.querySelectorAll('.nav-link');
+let isMenuExtended = false;
+let menuAppearingIntervalId;
+let menuAppearingLeftStyleValue = -100;
+
+menuButtons.forEach((menuButton)=>{
+    menuButton.onclick = function() {
+        if (isMenuExtended) {
+            isMenuExtended = false;
+            clearInterval(menuAppearingIntervalId)
+            menuAppearingIntervalId = setInterval(function() {
+                menuAppearingLeftStyleValue === -100 ? clearInterval(menuAppearingIntervalId) : menuAppearingLeftStyleValue -= 10;
+                menuContainer.style.left = `${menuAppearingLeftStyleValue}%`;
+            }, 25)
+        } else {
+            isMenuExtended = true;
+            clearInterval(menuAppearingIntervalId)
+            menuAppearingIntervalId = setInterval(function() {
+                menuAppearingLeftStyleValue === 0 ? clearInterval(menuAppearingIntervalId) : menuAppearingLeftStyleValue += 10;
+                menuContainer.style.left = `${menuAppearingLeftStyleValue}%`;
+            }, 25)
+
+        }
+    }
+})
+
+navLinks.forEach((navLink) => {
+    navLink.onclick = function () {
+        if (window.innerWidth < 768) {
+            isMenuExtended = false;
+            clearInterval(menuAppearingIntervalId)
+            menuAppearingIntervalId = setInterval(function() {
+                menuAppearingLeftStyleValue === -100 ? clearInterval(menuAppearingIntervalId) : menuAppearingLeftStyleValue -= 10;
+                menuContainer.style.left = `${menuAppearingLeftStyleValue}%`;
+                console.log('-')
+            }, 25)
+        }
+    }
+})
 

@@ -20,6 +20,7 @@
             'url' => 'report_2020',
             'banner' => '2020.png'
         ],
+
         [
             'year' => 2021,
             'published' => '2 лютого 2022 року',
@@ -32,7 +33,7 @@
             'url' => 'report_2020',
             'banner' => '2020.png'
         ],
-/*
+        /*
         [
             'year' => 2023,
             'published' => '2 лютого 2024 року',
@@ -56,12 +57,12 @@
 @endphp
 
 @section('content')
-    <div class="container pt-5 d-flex flex-column" style="height: 100%">
+    <div class="container pt-5 d-flex flex-column h-100">
         <div class="row d-flex justify-content-end align-items-center logo-holder mb-2">
-            <div class="col-5 d-flex justify-content-end align-items-center">
+            <div class="col-4 col-sm-5 ml-3 d-flex justify-content-end align-items-center">
                 <img class="logo-image-holder p-1" src="{{ asset('img/Herb_Lutsk.svg') }}" alt="">
             </div>
-            <div class="col-7 d-flex justify-content-center flex-column align-items-start logo-text-holder">
+            <div class="col-8 col-sm-7 d-flex justify-content-center flex-column align-items-start logo-text-holder">
                 <p>
                     ЛУЦЬКА МІСЬКА РАДА
                 </p>
@@ -70,19 +71,21 @@
                 </p>
             </div>
         </div>
+
         <div class="row mt-5 d-flex align-items-center flex-column justify-content-start">
+                    <div class="mt-lg-5"></div>
             @foreach($reports as $report)
-                <div class="col-7 report-card mb-4 bg-white shadow rounded"
+                <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
                      onclick="location.href='{{ route($report['url']) }}';">
                     <p class="mb-4">{{ $report['year'] }}</p>
-                    <p>Опубліковано: {{ $report['published'] }}</p>
+                    <p class="col-4 col-md-6" style="z-index: 30; position: absolute; font-weight: bolder">Опубліковано:<br> {{ $report['published'] }}</p>
                     <img class="report-card-banner" src="{{ asset('img/report_banners_main_page/'.$report['banner']) }}"
                          alt="banner">
                 </div>
             @endforeach
         </div>
         <div class="row mt-2 d-flex align-items-center flex-column justify-content-center">
-            <div class="col-7 mt-2 d-flex align-items-center justify-content-center footer">
+            <div class="col-12 col-sm-10 col-md-9 col-xl-7 mt-2 d-flex align-items-end justify-content-center footer">
                 <img class="footer-image" src="{{ asset('img/report_list_footer.png') }}" alt="">
             </div>
         </div>
