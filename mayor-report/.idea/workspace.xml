@@ -19,29 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="Finished with last template (detail_view)">
-      <change afterPath="$PROJECT_DIR$/public/img/icons/up-arrow-angle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icons/up-arrow-angle_opacity-0.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/breadcrumb.blade.php" afterDir="false" />
+    <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="Done with frontend template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/list_of_reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/list_of_reports.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/report_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/report_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/report_presentation.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/report_presentation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/report_view_selection.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/report_view_selection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/report_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/report_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/report_presentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/report_presentation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/list_of_reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/list_of_reports.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/report_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/report_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/report_presentation.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/report_presentation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/report_view_selection.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/report_view_selection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/report_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/report_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/report_presentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/report_presentation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/slide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/slide.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/list_of_reports.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list_of_reports.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" afterDir="false" />
     </list>
@@ -200,7 +186,18 @@
       <workItem from="1610896888275" duration="6974000" />
       <workItem from="1610951381804" duration="16655000" />
       <workItem from="1611038299745" duration="18708000" />
-      <workItem from="1611125845661" duration="10977000" />
+      <workItem from="1611125845661" duration="12415000" />
+      <workItem from="1611227121680" duration="2822000" />
+      <workItem from="1611314823765" duration="5965000" />
+      <workItem from="1611397176281" duration="8402000" />
+      <workItem from="1611476534022" duration="9526000" />
+      <workItem from="1611563463025" duration="6022000" />
+      <workItem from="1611644425478" duration="4088000" />
+      <workItem from="1611728694182" duration="15763000" />
+      <workItem from="1611816131184" duration="22225000" />
+      <workItem from="1611901683545" duration="26253000" />
+      <workItem from="1612086545473" duration="4194000" />
+      <workItem from="1612170690923" duration="12935000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with last template (detail_view)">
       <created>1610897321708</created>
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610897321708</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Done with frontend template">
+      <created>1611150389365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611150389365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,20 +234,25 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Finished with last template (detail_view)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished with last template (detail_view)" />
+    <MESSAGE value="Done with frontend template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done with frontend template" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="443" key="NewPhpFileDialog" timestamp="1610977316708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610977316708" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1610897332124">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1611150394826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610897332124" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611150394826" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611042877832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611042877832" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611487083839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611487083839" />
   </component>
 </project>

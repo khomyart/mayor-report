@@ -80,6 +80,8 @@ menuButtons.forEach(function (menuButton) {
     }
   };
 });
+/* every time when navlink is pressed - hide side menu*/
+
 navLinks.forEach(function (navLink) {
   navLink.onclick = function () {
     if (window.innerWidth < 768) {

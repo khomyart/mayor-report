@@ -253,12 +253,12 @@ Extra extra large	xxl	≥1400px
     color: red;
 }
 
-.chart * {
-    font-size: 0.8rem;
-    background: rgba(255, 0, 0, 0);
-    display: flex;
-    justify-content: center;
-}
+/*.chart * {*/
+/*    font-size: 0.8rem;*/
+/*    background: rgba(255, 0, 0, 0);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
 
 
