@@ -19,16 +19,18 @@
             </button>
             <ul class="dropdown-menu shadow-sm question-mark-context-menu mt-2">
                 <li class="question-mark-context-menu-list-item">
-                    <a class="question-mark-context-menu-links" href="#{{ $article['additional_content_url'] }}">Додаткові
+                    <a class="question-mark-context-menu-links" href="{{ $article['additional_content_url'] }}">Додаткові
                         матеріали</a>
                 </li>
                 <li class="question-mark-context-menu-list-item">
-                    <a class="question-mark-context-menu-links" href="#346">Задати питання</a>
+                    <a class="question-mark-context-menu-links" href="https://www.lutskrada.gov.ua/electronic-appeal/request">Задати питання</a>
                 </li>
             </ul>
         </div>
     </h4>
-    {!! $article['content'] !!}
+    <div class="col-12 d-flex flex-column align-items-center" id="{{transliteration($article['name']).'_content'}}">
+        {!! $article['content'] !!}
+    </div>
 </section>
 
 <script>

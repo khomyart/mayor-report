@@ -50,6 +50,15 @@ Extra extra large	xxl	≥1400px
         display: flex;
         justify-content: center;
     }
+
+    p {
+        text-align: justify;
+    }
+
+    .article-subheader {
+        font-weight: bold; width: 100%;
+    }
+
 }
 
 /* md */
