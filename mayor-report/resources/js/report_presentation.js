@@ -4,6 +4,10 @@ let slidesContainer = document.querySelector('.presentation-container');
 let elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]')
 let elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]')
 let elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]')
+let elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]')
+let elementWithCustomTopPosition = document.querySelectorAll('[cX]')
+let elementWithCustomLeftPosition = document.querySelectorAll('[cX]')
+let elementWithTransformTransition = document.querySelectorAll('[cAnchor]')
 
 window.onload = function () {
     slides.forEach((e)=> {
@@ -28,6 +32,31 @@ window.onload = function () {
         let widthMultiplier = e.getAttribute('widthMultiplier');
         e.style.width = `${(widthUnit * widthMultiplier).toFixed()}px`;
     })
+
+    elementsWithResizableHeight.forEach(e => {
+        let heightUnit = slides[0].offsetHeight / 100;
+        let heightMultiplier = e.getAttribute('heightMultiplier');
+        e.style.height = `${(heightUnit * heightMultiplier).toFixed()}px`;
+    })
+
+    elementWithCustomTopPosition.forEach(e => {
+        let cYparam = e.getAttribute('cY');
+        e.style.position = 'absolute';
+        e.style.top = cYparam;
+    })
+
+    elementWithCustomLeftPosition.forEach(e => {
+        let cXparam = e.getAttribute('cX');
+        e.style.position = 'absolute';
+        e.style.left = cXparam;
+    })
+
+    elementWithTransformTransition.forEach(e => {
+        const regex = /\s+/gi;
+        let cAnchorParam = e.getAttribute('cAnchor').replace(regex, '').split(',');
+        e.style.position = 'absolute';
+        e.style.transform = `translate(${cAnchorParam[0]}, ${cAnchorParam[1]})`;
+    })
 }
 
 window.onresize = function () {
@@ -51,6 +80,31 @@ window.onresize = function () {
         let widthUnit = slides[0].offsetWidth / 100;
         let widthMultiplier = e.getAttribute('widthMultiplier');
         e.style.width = `${(widthUnit * widthMultiplier).toFixed()}px`;
+    })
+
+    elementsWithResizableHeight.forEach(e => {
+        let heightUnit = slides[0].offsetHeight / 100;
+        let heightMultiplier = e.getAttribute('heightMultiplier');
+        e.style.height = `${(heightUnit * heightMultiplier).toFixed()}px`;
+    })
+
+    elementWithCustomTopPosition.forEach(e => {
+        let cYparam = e.getAttribute('cY');
+        e.style.position = 'absolute';
+        e.style.top = cYparam;
+    })
+
+    elementWithCustomLeftPosition.forEach(e => {
+        let cXparam = e.getAttribute('cX');
+        e.style.position = 'absolute';
+        e.style.left = cXparam;
+    })
+
+    elementWithTransformTransition.forEach(e => {
+        const regex = /\s+/gi;
+        let cAnchorParam = e.getAttribute('cAnchor').replace(regex, '').split(',');
+        e.style.position = 'absolute';
+        e.style.transform = `translate(${cAnchorParam[0]}, ${cAnchorParam[1]})`;
     })
 }
 

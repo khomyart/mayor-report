@@ -9,6 +9,10 @@ var slidesContainer = document.querySelector('.presentation-container');
 var elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]');
 var elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]');
 var elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]');
+var elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]');
+var elementWithCustomTopPosition = document.querySelectorAll('[cX]');
+var elementWithCustomLeftPosition = document.querySelectorAll('[cX]');
+var elementWithTransformTransition = document.querySelectorAll('[cAnchor]');
 
 window.onload = function () {
   slides.forEach(function (e) {
@@ -30,6 +34,27 @@ window.onload = function () {
     var widthMultiplier = e.getAttribute('widthMultiplier');
     e.style.width = "".concat((widthUnit * widthMultiplier).toFixed(), "px");
   });
+  elementsWithResizableHeight.forEach(function (e) {
+    var heightUnit = slides[0].offsetHeight / 100;
+    var heightMultiplier = e.getAttribute('heightMultiplier');
+    e.style.height = "".concat((heightUnit * heightMultiplier).toFixed(), "px");
+  });
+  elementWithCustomTopPosition.forEach(function (e) {
+    var cYparam = e.getAttribute('cY');
+    e.style.position = 'absolute';
+    e.style.top = cYparam;
+  });
+  elementWithCustomLeftPosition.forEach(function (e) {
+    var cXparam = e.getAttribute('cX');
+    e.style.position = 'absolute';
+    e.style.left = cXparam;
+  });
+  elementWithTransformTransition.forEach(function (e) {
+    var regex = /\s+/gi;
+    var cAnchorParam = e.getAttribute('cAnchor').replace(regex, '').split(',');
+    e.style.position = 'absolute';
+    e.style.transform = "translate(".concat(cAnchorParam[0], ", ").concat(cAnchorParam[1], ")");
+  });
 };
 
 window.onresize = function () {
@@ -50,6 +75,27 @@ window.onresize = function () {
     var widthUnit = slides[0].offsetWidth / 100;
     var widthMultiplier = e.getAttribute('widthMultiplier');
     e.style.width = "".concat((widthUnit * widthMultiplier).toFixed(), "px");
+  });
+  elementsWithResizableHeight.forEach(function (e) {
+    var heightUnit = slides[0].offsetHeight / 100;
+    var heightMultiplier = e.getAttribute('heightMultiplier');
+    e.style.height = "".concat((heightUnit * heightMultiplier).toFixed(), "px");
+  });
+  elementWithCustomTopPosition.forEach(function (e) {
+    var cYparam = e.getAttribute('cY');
+    e.style.position = 'absolute';
+    e.style.top = cYparam;
+  });
+  elementWithCustomLeftPosition.forEach(function (e) {
+    var cXparam = e.getAttribute('cX');
+    e.style.position = 'absolute';
+    e.style.left = cXparam;
+  });
+  elementWithTransformTransition.forEach(function (e) {
+    var regex = /\s+/gi;
+    var cAnchorParam = e.getAttribute('cAnchor').replace(regex, '').split(',');
+    e.style.position = 'absolute';
+    e.style.transform = "translate(".concat(cAnchorParam[0], ", ").concat(cAnchorParam[1], ")");
   });
 };
 /* show and hide menu with button */
