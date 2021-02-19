@@ -48,7 +48,7 @@
  *
 [
     'name' => '',
-    'img' => '',
+    'img' => '/img/slides/2020/0.jpg',
     'img_stretch' => 'vertical',
     'content' => '',
     'subparagraphs' => [],
@@ -57,18 +57,50 @@
  */
     $presentation = [
         [
+            'name' => 'Вступне слово міського голови Поліщука І.І.',
+            'img' => '/img/slides/2020/0.jpg',
+            'img_stretch' => 'vertical',
+            'content' => ' <span cy="45%" cx="50%" widthmultiplier="70" height="auto" canchor="-50%,-50%" style="text-align: justify; width: 756px; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);"> <p fontsizemultiplier="2" marginbottommultiplier="2" style="font-size: 21.6px; margin-bottom: 15px;"> Шановні мешканці Луцької міської територіальної громади! </p> <p fontsizemultiplier="1.2" marginbottommultiplier="2" style="font-size: 12.96px; margin-bottom: 15px;"> Пропоную вам звіт про роботу виконавчих органів міської ради за 2020 рік. </p> <p fontsizemultiplier="1.2" marginbottommultiplier="2" style="font-size: 12.96px; margin-bottom: 15px;"> Вважаю, що як орган місцевого самоврядування, ми повинні використовувати усі наявні засоби і способи комунікації, аби довести до вас інформацію про життєдіяльність громади, про те, що зроблено міською владою і які плани нам з вами належить реалізувати у цьому році. Це аналіз ефективності роботи Луцької міської ради, її виконавчого комітету та усіх працівників виконавчих органів міської ради. </p> <p fontsizemultiplier="1.2" marginbottommultiplier="2" style="font-size: 12.96px; margin-bottom: 15px;"> 2020 рік був непростим і напруженим. І проблема не тільки у світовій пандемії коронавірусу. Політичні перипетії, спад національної економіки в усіх сферах, адміністративно - територіальна реформа, відкриття ринку землі, підвищення тарифів і цін на товари та ліки, війна на Сході України і, зрештою, місцеві вибори – в таких умовах здійснювалось управління і господарювання містом. Усі зусилля міської влади були спрямовані на підтримку економіки громади, суб’єктів господарювання, інвестиційної привабливості, наповнення бюджету, соціальної стабільності і забезпечення безпеки громадян в умовах карантину і локдауну. Протягом 2020 року у нашій громаді тривали роботи із термомодернізації бюджетних установ та закладів, ремонту об`єктів вулично&nbsp;-&nbsp;дорожньої мережі та прибудинкових територій, впроваджувались заходи інвестиційних міжнародних проєктів із модернізації системи централізованого теплопостачання, оновлення громадського електротранспорту, освітлення та встановлення камер зовнішнього відеоспостереження у різних мікрорайонах міст, проводились фестивалі, змагання та ін. </p> <p fontsizemultiplier="1.2" marginbottommultiplier="2" style="font-size: 12.96px; margin-bottom: 15px;"> Саме завдяки злагодженій, ефективній співпраці, влади, бізнесу і громади ми завершили 2020 рік з хорошими показниками. Не зважаючи на те, що виклики економічної кризи зумовили суттєве зростання видатків на медичне та соціальне забезпечення, нам вдалось реалізувати чимало інфраструктурних проєктів та завдань, передбачених Програмою економічного та соціального розвитку міста на 2020 рік та Бюджетом міста Луцька. Дякую кожному жителю громади, хто щоденною сумлінною працею сприяв її розвитку, кожному представнику великого, малого та середнього бізнесу, завдяки прозорій ефективній діяльності яких наповнювався міський бюджет. </p> </span> <div widthmultiplier="100" heightmultiplier="5.5" cy="3.8%" cx="0%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgb(27, 100, 235)); width: 1080px; height: 42px; position: absolute; top: 3.8%; left: 0%;" class="shadow"> <a cx="10%" cy="46%" canchor="-50%,-50%" style="color: white; text-decoration: none; font-weight: 700; width: fit-content; font-size: 20.52px; position: absolute; top: 46%; left: 10%; transform: translate(-50%, -50%);" fontsizemultiplier="1.9" href="https://www.lutskrada.gov.ua"> #lutskrada.gov.ua </a> <a cx="92%" cy="46%" canchor="-50%,-50%" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: 700; width: fit-content; font-size: 20.52px; position: absolute; top: 46%; left: 92%; transform: translate(-50%, -50%);" fontsizemultiplier="1.9" href="https://www.facebook.com/lutskrada"> fb:@lutskrada </a> </div> <img cy="87%" cx="39%" canchor="-50%, -50%" heightmultiplier="8" src="img/Herb_Lutsk.svg" alt="" style="height: 62px; position: absolute; top: 87%; left: 39%; transform: translate(-50%, -50%);"> <span fontsizemultiplier="1.4" cy="86.8%" cx="45.5%" canchor="-50%, -50%" style="font-weight: bold; font-size: 15.12px; position: absolute; top: 86.8%; left: 45.5%; transform: translate(-50%, -50%);"> ЛУЦЬКА <br> МІСЬКА <br> РАДА </span> <img heightmultiplier="8.7" cx="59%" cy="87%" canchor="-50%, -50%" src="img/logo_lutsk.png" alt="" style="height: 67px; position: absolute; top: 87%; left: 59%; transform: translate(-50%, -50%);"> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="100%" canchor="-100%,-50%" style="background: linear-gradient(to left, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 100%; transform: translate(-100%, -50%);"> </div> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="0%" canchor="0%,-50%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 0%; transform: translate(0%, -50%);"> </div> <section> <style> </style> <script> </script> </section> ',
+            'subparagraphs' => [],
+        ],
+        [
             'name' => 'Виконання бюджету громади та фінансова політика у 2020 році',
             'img' => '/img/slides/2020/0.jpg',
             'img_stretch' => 'vertical',
             'content' => ' <span cy="45%" cx="50%" widthmultiplier="70" fontsizemultiplier="3" height="auto" canchor="-50%,-50%" style="text-align: center; font-size: 37.8px; width: 756px; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);"> Виконання бюджету громади та фінансова політика у 2020 році </span> <div widthmultiplier="100" heightmultiplier="5.5" cy="3.8%" cx="0%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgb(27, 100, 235)); width: 1080px; height: 42px; position: absolute; top: 3.8%; left: 0%;" class="shadow"> <a cx="10%" cy="46%" canchor="-50%,-50%" style="color: white; text-decoration: none; font-weight: 700; width: fit-content; font-size: 20.52px; position: absolute; top: 46%; left: 10%; transform: translate(-50%, -50%);" fontsizemultiplier="1.9" href="https://www.lutskrada.gov.ua"> #lutskrada.gov.ua </a> <a cx="92%" cy="46%" canchor="-50%,-50%" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: 700; width: fit-content; font-size: 20.52px; position: absolute; top: 46%; left: 92%; transform: translate(-50%, -50%);" fontsizemultiplier="1.9" href="https://www.facebook.com/lutskrada"> fb:@lutskrada </a> </div> <img cy="87%" cx="39%" canchor="-50%, -50%" heightmultiplier="8" src="img/Herb_Lutsk.svg" alt="" style="height: 62px; position: absolute; top: 87%; left: 39%; transform: translate(-50%, -50%);"> <span fontsizemultiplier="1.4" cy="86.8%" cx="45.5%" canchor="-50%, -50%" style="font-weight: bold; font-size: 15.12px; position: absolute; top: 86.8%; left: 45.5%; transform: translate(-50%, -50%);"> ЛУЦЬКА <br> МІСЬКА <br> РАДА </span> <img heightmultiplier="8.7" cx="59%" cy="87%" canchor="-50%, -50%" src="img/logo_lutsk.png" alt="" style="height: 67px; position: absolute; top: 87%; left: 59%; transform: translate(-50%, -50%);"> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="100%" canchor="-100%,-50%" style="background: linear-gradient(to left, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 100%; transform: translate(-100%, -50%);"> </div> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="0%" canchor="0%,-50%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 0%; transform: translate(0%, -50%);"> </div> <section> <style> </style> <script> </script> </section> ',
-            'subparagraphs' => [],
+
+            'subparagraphs' => [
+                [
+                    'name' => 'Інформація',
+                    'img' => '/img/slides/2020/0.jpg',
+                    'img_stretch' => 'vertical',
+                    'content' => ' <span cy="45%" cx="50%" widthmultiplier="70" height="auto" canchor="-50%,-50%" style="text-align: center; width: 756px; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);"> <p fontsizemultiplier="2" style="font-size: 21.6px;"> До бюджету громади за 2020 рік надійшло доходів в сумі 2&nbsp;229,1 млн грн при уточнених призначеннях 2&nbsp;328,5 млн грн. Виконання склало 95,7 %. </p> <br> <br> <p fontsizemultiplier="2" style="font-size: 21.6px;"> Від продажу земельних ділянок у бюджет міста надійшло 11,5 млн грн, що становить 230&nbsp;% до запланованих надходжень. </p> <br> <br> <p fontsizemultiplier="2" style="font-size: 21.6px;"> В 2020 році з бюджету громади проведено видатки на суму 2&nbsp;356,7&nbsp;млн&nbsp;грн. Видатки загального фонду виконано в сумі 1&nbsp;808,5&nbsp;млн&nbsp;грн, спеціального фонду – 548,2&nbsp;млн&nbsp;грн. </p> </span> <div widthmultiplier="50" heightmultiplier="4" cy="3.8%" cx="0%" style="background: linear-gradient(to right, rgb(255, 0, 0), 80%, rgba(27, 100, 235, 0)); width: 540px; height: 31px; position: absolute; top: 3.8%; left: 0%;" class=""> <a cx="18%" cy="46%" canchor="-50%,-50%" style="color: white; text-decoration: none; font-weight: 700; width: fit-content; font-size: 18.36px; position: absolute; top: 46%; left: 18%; transform: translate(-50%, -50%);" fontsizemultiplier="1.7" href="https://www.lutskrada.gov.ua"> #lutskrada.gov.ua </a> <a cx="50%" cy="46%" canchor="-50%,-50%" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: 700; width: fit-content; font-size: 18.36px; position: absolute; top: 46%; left: 50%; transform: translate(-50%, -50%);" fontsizemultiplier="1.7" href="https://www.facebook.com/lutskrada"> fb:@lutskrada </a> </div> <img cy="87%" cx="39%" canchor="-50%, -50%" heightmultiplier="8" src="img/Herb_Lutsk.svg" alt="" style="height: 62px; position: absolute; top: 87%; left: 39%; transform: translate(-50%, -50%);"> <span fontsizemultiplier="1.4" cy="86.8%" cx="45.5%" canchor="-50%, -50%" style="font-weight: bold; font-size: 15.12px; position: absolute; top: 86.8%; left: 45.5%; transform: translate(-50%, -50%);"> ЛУЦЬКА <br> МІСЬКА <br> РАДА </span> <img heightmultiplier="8.7" cx="59%" cy="87%" canchor="-50%, -50%" src="img/logo_lutsk.png" alt="" style="height: 67px; position: absolute; top: 87%; left: 59%; transform: translate(-50%, -50%);"> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="100%" canchor="-100%,-50%" style="background: linear-gradient(to left, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 100%; transform: translate(-100%, -50%);"> </div> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="0%" canchor="0%,-50%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 0%; transform: translate(0%, -50%);"> </div> <section> <style> </style> <script> </script> </section> ',
+                    'subparagraphs' => [],
+                ],
+            ],
         ],
         [
             'name' => 'Аналіз економічного та соціального розвитку Луцької міської територіальної громади у 2020 році та діяльність департаменту економічної політики',
             'img' => '/img/slides/2020/0.jpg',
             'img_stretch' => 'vertical',
             'content' => ' <span cy="45%" cx="50%" widthmultiplier="70" fontsizemultiplier="3" height="auto" canchor="-50%,-50%" style="text-align: center; font-size: 32.4px; width: 756px; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);"> Аналіз економічного та соціального розвитку Луцької міської територіальної громади у 2020 році та діяльність департаменту економічної політики </span> <div widthmultiplier="100" heightmultiplier="5.5" cy="3.8%" cx="0%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgb(27, 100, 235)); width: 1080px; height: 42px; position: absolute; top: 3.8%; left: 0%;" class="shadow"> <a cx="10%" cy="46%" canchor="-50%,-50%" style="color: white; text-decoration: none; font-weight: 700; width: fit-content; font-size: 20.52px; position: absolute; top: 46%; left: 10%; transform: translate(-50%, -50%);" fontsizemultiplier="1.9" href="https://www.lutskrada.gov.ua"> #lutskrada.gov.ua </a> <a cx="92%" cy="46%" canchor="-50%,-50%" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: 700; width: fit-content; font-size: 20.52px; position: absolute; top: 46%; left: 92%; transform: translate(-50%, -50%);" fontsizemultiplier="1.9" href="https://www.facebook.com/lutskrada"> fb:@lutskrada </a> </div> <img cy="87%" cx="39%" canchor="-50%, -50%" heightmultiplier="8" src="img/Herb_Lutsk.svg" alt="" style="height: 62px; position: absolute; top: 87%; left: 39%; transform: translate(-50%, -50%);"> <span fontsizemultiplier="1.4" cy="86.8%" cx="45.5%" canchor="-50%, -50%" style="font-weight: bold; font-size: 15.12px; position: absolute; top: 86.8%; left: 45.5%; transform: translate(-50%, -50%);"> ЛУЦЬКА <br> МІСЬКА <br> РАДА </span> <img heightmultiplier="8.7" cx="59%" cy="87%" canchor="-50%, -50%" src="img/logo_lutsk.png" alt="" style="height: 67px; position: absolute; top: 87%; left: 59%; transform: translate(-50%, -50%);"> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="100%" canchor="-100%,-50%" style="background: linear-gradient(to left, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 100%; transform: translate(-100%, -50%);"> </div> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="0%" canchor="0%,-50%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 0%; transform: translate(0%, -50%);"> </div> <section> <style> </style> <script> </script> </section> ',
-            'subparagraphs' => [],
+            'subparagraphs' => [
+                [
+                    'name' => 'Інформація 1',
+                    'img' => '/img/slides/2020/2/2_1.png',
+                    'img_stretch' => 'horizontal',
+                    'content' => ' <span cy="25%" cx="0%" widthmultiplier="70" heightmultiplier="10" canchor="0%,-50%" style="text-align: left; background: linear-gradient(to right, rgb(255, 0, 0), 80%, rgba(27, 100, 235, 0)); width: 756px; height: 77px; position: absolute; top: 25%; left: 0%; transform: translate(0%, -50%);" class="d-flex justify-content-start align-items-center"> <div widthmultiplier="50" cy="50%" cx="3%" canchor="0%,-50%" fontsizemultiplier="1.5" style="color: white; font-size: 16.2px; width: 540px; position: absolute; top: 50%; left: 3%; transform: translate(0%, -50%);"> Чисельність наявного населення міста Луцька на 1 грудня 2020&nbsp;&nbsp;року становила 217,3 тис. осіб. У місті народилося 1&nbsp;459 дітей. </div> </span> <div widthmultiplier="50" heightmultiplier="4" cy="3.8%" cx="0%" style="background: linear-gradient(to right, rgb(255, 0, 0), 80%, rgba(27, 100, 235, 0)); width: 540px; height: 31px; position: absolute; top: 3.8%; left: 0%;" class=""> <a cx="18%" cy="47%" canchor="-50%,-50%" style="color: white; text-decoration: none; font-weight: 700; width: fit-content; font-size: 18.36px; position: absolute; top: 47%; left: 18%; transform: translate(-50%, -50%);" fontsizemultiplier="1.7" href="https://www.lutskrada.gov.ua"> #lutskrada.gov.ua </a> <a cx="50%" cy="47%" canchor="-50%,-50%" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: 700; width: fit-content; font-size: 18.36px; position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%);" fontsizemultiplier="1.7" href="https://www.facebook.com/lutskrada"> fb:@lutskrada </a> </div> <div cy="87%" cx="50%" widthmultiplier="100" heightmultiplier="13" canchor="-50%,-50%" style="text-align: center; background-color: rgba(255, 255, 255, 0.965); width: 1080px; height: 100px; position: absolute; top: 87%; left: 50%; transform: translate(-50%, -50%);"> </div> <img cy="87%" cx="39%" canchor="-50%, -50%" heightmultiplier="8" src="img/Herb_Lutsk.svg" alt="" style="height: 62px; position: absolute; top: 87%; left: 39%; transform: translate(-50%, -50%);"> <span fontsizemultiplier="1.4" cy="86.8%" cx="45.5%" canchor="-50%, -50%" style="font-weight: bold; font-size: 15.12px; position: absolute; top: 86.8%; left: 45.5%; transform: translate(-50%, -50%);"> ЛУЦЬКА <br> МІСЬКА <br> РАДА </span> <img heightmultiplier="8.7" cx="59%" cy="87%" canchor="-50%, -50%" src="img/logo_lutsk.png" alt="" style="height: 67px; position: absolute; top: 87%; left: 59%; transform: translate(-50%, -50%);"> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="100%" canchor="-100%,-50%" style="background: linear-gradient(to left, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 100%; transform: translate(-100%, -50%);"> </div> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="0%" canchor="0%,-50%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 0%; transform: translate(0%, -50%);"> </div> <section> <style> </style> <script> </script> </section> ',
+                    'subparagraphs' => [],
+                ],
+                [
+                    'name' => 'Інформація 2',
+                    'img' => '/img/slides/2020/0.jpg',
+                    'img_stretch' => 'vertical',
+                    'content' => ' <span cy="45%" cx="50%" widthmultiplier="70" fontsizemultiplier="2" height="auto" canchor="-50%,-50%" style="text-align: center; font-size: 21.6px; width: 756px; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);"> Розмір середньомісячної номінальної заробітної плати штатного працівника склав 9&nbsp;670&nbsp;грн, що в 1,9 рази вище рівня законодавчо встановленої мінімальної заробітної плати (5&nbsp;000&nbsp;грн). </span> <div widthmultiplier="50" heightmultiplier="4" cy="3.8%" cx="0%" style="background: linear-gradient(to right, rgb(255, 0, 0), 80%, rgba(27, 100, 235, 0)); width: 540px; height: 31px; position: absolute; top: 3.8%; left: 0%;" class=""> <a cx="18%" cy="46%" canchor="-50%,-50%" style="color: white; text-decoration: none; font-weight: 700; width: fit-content; font-size: 18.36px; position: absolute; top: 46%; left: 18%; transform: translate(-50%, -50%);" fontsizemultiplier="1.7" href="https://www.lutskrada.gov.ua"> #lutskrada.gov.ua </a> <a cx="50%" cy="46%" canchor="-50%,-50%" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: 700; width: fit-content; font-size: 18.36px; position: absolute; top: 46%; left: 50%; transform: translate(-50%, -50%);" fontsizemultiplier="1.7" href="https://www.facebook.com/lutskrada"> fb:@lutskrada </a> </div> <img cy="87%" cx="39%" canchor="-50%, -50%" heightmultiplier="8" src="img/Herb_Lutsk.svg" alt="" style="height: 62px; position: absolute; top: 87%; left: 39%; transform: translate(-50%, -50%);"> <span fontsizemultiplier="1.4" cy="86.8%" cx="45.5%" canchor="-50%, -50%" style="font-weight: bold; font-size: 15.12px; position: absolute; top: 86.8%; left: 45.5%; transform: translate(-50%, -50%);"> ЛУЦЬКА <br> МІСЬКА <br> РАДА </span> <img heightmultiplier="8.7" cx="59%" cy="87%" canchor="-50%, -50%" src="img/logo_lutsk.png" alt="" style="height: 67px; position: absolute; top: 87%; left: 59%; transform: translate(-50%, -50%);"> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="100%" canchor="-100%,-50%" style="background: linear-gradient(to left, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 100%; transform: translate(-100%, -50%);"> </div> <div widthmultiplier="31" heightmultiplier="9" cy="87%" cx="0%" canchor="0%,-50%" style="background: linear-gradient(to right, rgb(255, 0, 0), 50%, rgba(0, 255, 255, 0)); width: 335px; height: 69px; position: absolute; top: 87%; left: 0%; transform: translate(0%, -50%);"> </div> <section> <style> </style> <script> </script> </section> ',
+                    'subparagraphs' => [],
+                ],
+
+            ],
         ],
         [
             'name' => 'Розвиток підприємництва та сфери зовнішньої реклами',
@@ -233,7 +265,7 @@
                 $presentation[$key]['subparagraphs'][$subKey]['content'] = preg_replace($replacementPatterns,
                 [
 
-                    transliteration($subparagraph['name']), //idReplacementPattern
+                    transliteration($slide['name']).'_'.transliteration($subparagraph['name']), //idReplacementPattern
                     '$1'.asset('$2').'$3', //imageSrcReplacementPattern
 
                 ], $subparagraph['content']);
@@ -241,7 +273,7 @@
             }
         }
 
-         $presentation[$key]['content'] = preg_replace($replacementPatterns,
+        $presentation[$key]['content'] = preg_replace($replacementPatterns,
         [
 
             transliteration($slide['name']), //idReplacementPattern
@@ -282,26 +314,37 @@
                             @continue
                         @endif
 
-                        <a class="nav-link main-paragraph"
-                           href="#{{ transliteration($slide['name']) }}">{{ $slide['name'] }}</a>
+                            <a class="nav-link main-paragraph"
+                               href="#{{ transliteration($slide['name']) }}">{{ $slide['name'] }}</a>
 
                         @if(isset($slide['subparagraphs']) && !empty($slide['subparagraphs']))
                             @foreach($slide['subparagraphs'] as $subparagraph)
+                                @if(count($slide['subparagraphs']) == 1)
+                                    <nav class="nav nav-pills flex-column">
+                                        <a class="nav-link ms-4"
+                                           href="#{{ transliteration($slide['name']).'_'.transliteration($subparagraph['name']) }}">
+                                            {{ $subparagraph['name'] }}
+                                        </a>
+                                    </nav>
+                                    @break
+                                @endif
 
                                 @if($loop->first)
                                     <nav class="nav nav-pills flex-column">
                                         <a class="nav-link ms-4"
-                                           href="#{{ transliteration($subparagraph['name']) }}">{{ $subparagraph['name'] }}</a>
-                                        @continue
-                                        @endif
-                                        @if($loop->last)
-                                            <a class="nav-link ms-4"
-                                               href="#{{ transliteration($subparagraph['name']) }}">{{ $subparagraph['name'] }}</a>
+                                           href="#{{ transliteration($slide['name']).'_'.transliteration($subparagraph['name']) }}">
+                                            {{ $subparagraph['name'] }}
+                                        </a>
+                                @continue
+                                @endif
+                                @if($loop->last)
+                                    <a class="nav-link ms-4"
+                                       href="#{{ transliteration($slide['name']).'_'.transliteration($subparagraph['name']) }}">{{ $subparagraph['name'] }}</a>
                                     </nav>
                                     @break
                                 @endif
                                 <a class="nav-link ms-4"
-                                   href="#{{ transliteration($subparagraph['name']) }}">{{ $subparagraph['name'] }}</a>
+                                   href="#{{ transliteration($slide['name']).'_'.transliteration($subparagraph['name']) }}">{{ $subparagraph['name'] }}</a>
                             @endforeach
                         @endif
                     @endforeach
@@ -325,7 +368,7 @@
                         @foreach($slide['subparagraphs'] as $subparagraph)
                             @include('includes.slide',
                                 [
-                                    'id' => transliteration($subparagraph['name']),
+                                    'id' => transliteration($slide['name']).'_'.transliteration($subparagraph['name']),
                                     'img' => $subparagraph['img'],
                                     'content' => $subparagraph['content'],
                                     'img_stretch' => $subparagraph['img_stretch'],

@@ -5,6 +5,7 @@ let elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]'
 let elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]')
 let elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]')
 let elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]')
+let elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMultiplier]')
 let elementWithCustomTopPosition = document.querySelectorAll('[cX]')
 let elementWithCustomLeftPosition = document.querySelectorAll('[cX]')
 let elementWithTransformTransition = document.querySelectorAll('[cAnchor]')
@@ -37,6 +38,12 @@ window.onload = function () {
         let heightUnit = slides[0].offsetHeight / 100;
         let heightMultiplier = e.getAttribute('heightMultiplier');
         e.style.height = `${(heightUnit * heightMultiplier).toFixed()}px`;
+    })
+
+    elementWithCustomMarginBottom.forEach(e => {
+        marginUnit = slides[0].offsetHeight/100;
+        marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
+        e.style.marginBottom = `${(marginUnit * marginBottomMultiplier).toFixed()}px`;
     })
 
     elementWithCustomTopPosition.forEach(e => {
@@ -86,6 +93,12 @@ window.onresize = function () {
         let heightUnit = slides[0].offsetHeight / 100;
         let heightMultiplier = e.getAttribute('heightMultiplier');
         e.style.height = `${(heightUnit * heightMultiplier).toFixed()}px`;
+    })
+
+    elementWithCustomMarginBottom.forEach(e => {
+        marginUnit = slides[0].offsetHeight/100;
+        marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
+        e.style.marginBottom = `${(marginUnit * marginBottomMultiplier).toFixed()}px`;
     })
 
     elementWithCustomTopPosition.forEach(e => {

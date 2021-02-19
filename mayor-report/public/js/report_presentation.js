@@ -10,6 +10,7 @@ var elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]'
 var elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]');
 var elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]');
 var elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]');
+var elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMultiplier]');
 var elementWithCustomTopPosition = document.querySelectorAll('[cX]');
 var elementWithCustomLeftPosition = document.querySelectorAll('[cX]');
 var elementWithTransformTransition = document.querySelectorAll('[cAnchor]');
@@ -38,6 +39,11 @@ window.onload = function () {
     var heightUnit = slides[0].offsetHeight / 100;
     var heightMultiplier = e.getAttribute('heightMultiplier');
     e.style.height = "".concat((heightUnit * heightMultiplier).toFixed(), "px");
+  });
+  elementWithCustomMarginBottom.forEach(function (e) {
+    marginUnit = slides[0].offsetHeight / 100;
+    marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
+    e.style.marginBottom = "".concat((marginUnit * marginBottomMultiplier).toFixed(), "px");
   });
   elementWithCustomTopPosition.forEach(function (e) {
     var cYparam = e.getAttribute('cY');
@@ -80,6 +86,11 @@ window.onresize = function () {
     var heightUnit = slides[0].offsetHeight / 100;
     var heightMultiplier = e.getAttribute('heightMultiplier');
     e.style.height = "".concat((heightUnit * heightMultiplier).toFixed(), "px");
+  });
+  elementWithCustomMarginBottom.forEach(function (e) {
+    marginUnit = slides[0].offsetHeight / 100;
+    marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
+    e.style.marginBottom = "".concat((marginUnit * marginBottomMultiplier).toFixed(), "px");
   });
   elementWithCustomTopPosition.forEach(function (e) {
     var cYparam = e.getAttribute('cY');
