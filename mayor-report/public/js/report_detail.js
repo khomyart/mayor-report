@@ -13,13 +13,19 @@ var container = document.querySelector('.container-fluid');
 var toTopButton = document.querySelector('.to-top-button');
 var isScreenOnChaptersContainer = true;
 document.querySelector('.container-fluid').scrollTop = 0;
+document.body.style.display = "none";
+
+window.onload = function () {
+  document.body.style.display = "block";
+  scrollToAnchor();
+};
 
 function scrollToAnchor() {
   var regex = /^#([a-zA-Z0-9-_]*)#*/gi;
   var hash = location.hash;
   var results = hash.matchAll(regex);
   var elementToScroll;
-  var scrollOffset = -10;
+  var scrollOffset = 0;
 
   var _iterator = _createForOfIteratorHelper(results),
       _step;
@@ -39,14 +45,10 @@ function scrollToAnchor() {
     window.scrollTo(0, 0);
   } else {
     var coordinatesToScroll = elementToScroll.getBoundingClientRect();
-    window.scrollTo(0, Math.abs(coordinatesToScroll.y) + scrollOffset);
+    window.scrollTo(0, Math.abs(coordinatesToScroll.y) + window.scrollY);
   }
-} //TODO: fix this stuff to work properly when everything in dom is loaded
+}
 
-
-setTimeout(function () {
-  scrollToAnchor();
-}, 50);
 var hrefTags = document.querySelectorAll('.content-table-href');
 hrefTags.forEach(function (href) {
   href.onclick = function () {

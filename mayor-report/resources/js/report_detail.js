@@ -4,13 +4,19 @@ let toTopButton = document.querySelector('.to-top-button');
 let isScreenOnChaptersContainer = true;
 
 document.querySelector('.container-fluid').scrollTop = 0;
+document.body.style.display = "none"
+
+window.onload = function () {
+    document.body.style.display = "block"
+    scrollToAnchor();
+}
 
 function scrollToAnchor() {
     let regex = /^#([a-zA-Z0-9-_]*)#*/gi;
     let hash = location.hash;
     let results = hash.matchAll(regex);
     let elementToScroll;
-    let scrollOffset = -10;
+    let scrollOffset = 0;
 
     for(let result of results) {
         elementToScroll = document.getElementById(String(result[1]));
@@ -21,14 +27,9 @@ function scrollToAnchor() {
         window.scrollTo(0, 0)
     } else {
         let coordinatesToScroll = elementToScroll.getBoundingClientRect();
-        window.scrollTo(0, Math.abs(coordinatesToScroll.y) + scrollOffset)
+        window.scrollTo(0, Math.abs(coordinatesToScroll.y) + window.scrollY)
     }
 }
-
-//TODO: fix this stuff to work properly when everything in dom is loaded
-setTimeout(function() {
-    scrollToAnchor();
-},50)
 
 let hrefTags = document.querySelectorAll('.content-table-href');
 
