@@ -6,7 +6,7 @@ let elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultipl
 let elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]')
 let elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]')
 let elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMultiplier]')
-let elementWithCustomTopPosition = document.querySelectorAll('[cX]')
+let elementWithCustomTopPosition = document.querySelectorAll('[cY]')
 let elementWithCustomLeftPosition = document.querySelectorAll('[cX]')
 let elementWithTransformTransition = document.querySelectorAll('[cAnchor]')
 

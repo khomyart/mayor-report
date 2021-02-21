@@ -11,7 +11,7 @@ var elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultipl
 var elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]');
 var elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]');
 var elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMultiplier]');
-var elementWithCustomTopPosition = document.querySelectorAll('[cX]');
+var elementWithCustomTopPosition = document.querySelectorAll('[cY]');
 var elementWithCustomLeftPosition = document.querySelectorAll('[cX]');
 var elementWithTransformTransition = document.querySelectorAll('[cAnchor]');
 
