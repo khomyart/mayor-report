@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Звіти голови Луцької міської ради')
+@section('title', 'Звіт про роботу виконавчих органів Луцької міської ради')
 
 @section('css_import')
     @parent
@@ -16,7 +16,7 @@
     [
         [
             'year' => 2020,
-            'published' => '19 лютого 2021 року',
+            'published' => '20 лютого 2021 року',
             'url' => 'report_2020',
             'banner' => '2020.png'
         ],
@@ -58,10 +58,10 @@
 @section('content')
     <div class="container pt-5 d-flex flex-column h-100">
         <div class="row d-flex justify-content-end align-items-center logo-holder mb-2">
-            <div class="col-4 col-sm-5 ml-3 d-flex justify-content-end align-items-center">
+            <div class="col-3 col-sm-4 ml-3 d-flex justify-content-end align-items-center">
                 <img class="logo-image-holder p-1" src="{{ asset('img/Herb_Lutsk.svg') }}" alt="">
             </div>
-            <div class="col-8 col-sm-7 d-flex justify-content-center flex-column align-items-start logo-text-holder">
+            <div class="col-9 col-sm-8 d-flex justify-content-center flex-column align-items-start logo-text-holder">
                 <p>
                     ЛУЦЬКА МІСЬКА РАДА
                 </p>

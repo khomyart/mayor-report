@@ -19,64 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="added new tag marginBottomMultiplier, ready for showcase at 18:00">
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/13/13_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/14/14_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/14/14_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/15/15_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/15/15_4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/15/15_5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/16/16_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/16/16_4_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/16/16_4_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/16/16_5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/17/17_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/17/17_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/17/17_4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/17/17_6.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/18/18_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/18/18_4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/18/18_6.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/19/19_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/20/20_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/20/20_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/20/20_4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/2020.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/21/21_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/22/22_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/27/27_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/5/5_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/5/5_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/5/5_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/5/5_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_10_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_1_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_1_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_1_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_2_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_2_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_4_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_4_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_5_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_5_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_5_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_6_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_6_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_6_3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_7_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_7_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_8_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_9_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/6/6_9_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/7/7_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/8/8_1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/8/8_2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/9/9_2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="done with presentation and actually with 2020 year report, but pictures are incredible heavy">
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/report_presentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/report_presentation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/reports_pdf/2020.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/reports_pdf/2020.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/report_presentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/report_presentation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/list_of_reports.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list_of_reports.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" afterDir="false" />
     </list>
@@ -258,7 +208,7 @@
       <workItem from="1613631957866" duration="10745000" />
       <workItem from="1613722053399" duration="19081000" />
       <workItem from="1613821539715" duration="19458000" />
-      <workItem from="1613891780190" duration="2570000" />
+      <workItem from="1613891780190" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with last template (detail_view)">
       <created>1610897321708</created>
@@ -309,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613749949328</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="done with presentation and actually with 2020 year report, but pictures are incredible heavy">
+      <created>1613899585287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613899585287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +293,8 @@
     <MESSAGE value="presentation template is done" />
     <MESSAGE value="kinda fixed detail report scroll issue" />
     <MESSAGE value="added new tag marginBottomMultiplier, ready for showcase at 18:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new tag marginBottomMultiplier, ready for showcase at 18:00" />
+    <MESSAGE value="done with presentation and actually with 2020 year report, but pictures are incredible heavy" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with presentation and actually with 2020 year report, but pictures are incredible heavy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="383" key="#Notifications" timestamp="1612260352286">
@@ -347,10 +305,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610977316708" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1613749952470">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1613899589377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613749952470" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613899589377" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611042877832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

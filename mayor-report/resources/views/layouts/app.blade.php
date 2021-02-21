@@ -9,6 +9,11 @@
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Re post meta tags -->
+    <meta property="og:url"                content="http://reports.lutskrada.gov.ua/">
+    <meta property="og:image"              content="http://reports.lutskrada.gov.ua/img/banner.png" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:description"        content="" />
     @section('css_import')
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @show
