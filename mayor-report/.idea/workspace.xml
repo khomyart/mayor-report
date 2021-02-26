@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="added favicon and meta tags for publishing">
+      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/28/28_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slides/2020/28/28_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +205,9 @@
       <workItem from="1613821539715" duration="19458000" />
       <workItem from="1613891780190" duration="5109000" />
       <workItem from="1613976132440" duration="642000" />
-      <workItem from="1614065109100" duration="2198000" />
+      <workItem from="1614065109100" duration="3749000" />
+      <workItem from="1614150401503" duration="784000" />
+      <workItem from="1614325813054" duration="1288000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with last template (detail_view)">
       <created>1610897321708</created>
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613902067077</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="minor content changes">
+      <created>1614067796549</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614067796550</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +308,8 @@
     <MESSAGE value="added new tag marginBottomMultiplier, ready for showcase at 18:00" />
     <MESSAGE value="done with presentation and actually with 2020 year report, but pictures are incredible heavy" />
     <MESSAGE value="added favicon and meta tags for publishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added favicon and meta tags for publishing" />
+    <MESSAGE value="minor content changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor content changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="383" key="#Notifications" timestamp="1612260352286">
@@ -312,10 +324,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610977316708" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1613902070182">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1614067801812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613902070182" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614067801812" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611042877832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
