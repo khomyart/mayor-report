@@ -22,7 +22,6 @@
     <list default="true" id="e80ff797-8ed2-4603-939a-919afff55012" name="Default Changelist" comment="added 2 new slides">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/2020/report_2020_presentation.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,10 @@
       <workItem from="1627390030528" duration="626000" />
       <workItem from="1627547520268" duration="679000" />
       <workItem from="1627972323661" duration="19000" />
-      <workItem from="1628427623900" duration="2008000" />
+      <workItem from="1628427623900" duration="4980000" />
+      <workItem from="1628513939999" duration="15000" />
+      <workItem from="1628595202075" duration="211000" />
+      <workItem from="1628595434645" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with last template (detail_view)">
       <created>1610897321708</created>
