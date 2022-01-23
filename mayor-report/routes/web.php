@@ -32,6 +32,11 @@ Route::get('/report/{year}/detail', [Reports::class, 'showReportDetail'])
 Route::get('/report/{year}/presentation', [Reports::class, 'showReportPresentation'])
 ->name('report_presentation');
 
+//AWAY
+Route::get('/control', function() {
+    return redirect()->away('http://localhost:8000');
+});
+
 
 #2020
 Route::get('/2020', function () {
