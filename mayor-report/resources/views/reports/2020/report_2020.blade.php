@@ -61,7 +61,7 @@
 @section('content')
     <div class="container h-100">
         <div class="row d-flex view-container">
-            @include('includes.breadcrumb', ['breadcrumbs' => $breadcrumbs])
+            @include('includes.2020.breadcrumb', ['breadcrumbs' => $breadcrumbs])
             @foreach($list_of_views as $view)
                 <div id="{{ $view['id'] }}" class="col-9 col-md-10 col-lg-8 col-xl-7 view rounded shadow bg-white mb-2 p-2"
                      onclick="location.href='@if ($view['id'] == 'book') {{ asset('/reports_pdf/2020.pdf') }} @else {{ route($view['url']) }} @endif';"

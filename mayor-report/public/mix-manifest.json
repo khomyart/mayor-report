@@ -3,6 +3,8 @@
     "/js/report_view_selection.js": "/js/report_view_selection.js",
     "/js/report_presentation.js": "/js/report_presentation.js",
     "/js/report_detail.js": "/js/report_detail.js",
+    "/js/2020/report_detail.js": "/js/2020/report_detail.js",
+    "/js/2020/report_presentation.js": "/js/2020/report_presentation.js",
     "/css/report_detail.css": "/css/report_detail.css",
     "/css/report_presentation.css": "/css/report_presentation.css",
     "/css/report_view_selection.css": "/css/report_view_selection.css",

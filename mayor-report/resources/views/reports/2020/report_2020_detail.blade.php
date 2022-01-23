@@ -13,7 +13,7 @@
 
 @section('javascript_import')
     @parent
-    <script defer src="{{ asset('/js/report_detail.js') }}"></script>
+    <script defer src="{{ asset('/js/2020/report_detail.js') }}"></script>
 @endsection
 
 @php
@@ -1043,7 +1043,7 @@ foreach($articles as $key => $article) {
                     <img src="{{ asset('img/icons/up-arrow-angle.svg') }}" alt="">
                 </a>
                 <div class="row pb-4">
-                    @include('includes.breadcrumb', ['breadcrumbs' => $breadcrumbs])
+                    @include('includes.2020.breadcrumb', ['breadcrumbs' => $breadcrumbs])
                 </div>
                 <h3 class="mb-4">
                     Зміст
@@ -1061,7 +1061,7 @@ foreach($articles as $key => $article) {
         <div class="row d-flex justify-content-center pt-4 mb-4">
             <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 content-container shadow">
                 @foreach($articles as $article)
-                    @include('includes.article', ['article' => $article])
+                    @include('includes.2020.article', ['article' => $article])
                 @endforeach
             </div>
         </div>

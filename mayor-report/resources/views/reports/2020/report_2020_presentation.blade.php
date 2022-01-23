@@ -9,7 +9,7 @@
 
 @section('javascript_import')
     @parent
-    <script src="{{ asset('/js/report_presentation.js') }}"></script>
+    <script src="{{ asset('/js/2020/report_presentation.js') }}"></script>
 @endsection
 
 @php
@@ -888,7 +888,7 @@
         </button>
         <div class="col-12 col-md-5 col-lg-4 col-xl-3 shadow menu-container">
             <div class="row mb-3 d-flex justify-content-center">
-                @include('includes.breadcrumb', ['breadcrumbs' => $breadcrumbs])
+                @include('includes.2020.breadcrumb', ['breadcrumbs' => $breadcrumbs])
                 <button class="menu-button menu-button-inline mt-2 col-11">
                     Сховати
                 </button>
@@ -945,7 +945,7 @@
                  data-bs-offset="100"
                  class="presentation-container" tabindex="0">
                 @foreach($presentation as $slide)
-                    @include('includes.slide',
+                    @include('includes.2020.slide',
                                     [
                                         'id' => transliteration($slide['name']),
                                         'img' => $slide['img'],
@@ -955,7 +955,7 @@
 
                     @if(isset($slide['subparagraphs']) && !empty($slide['subparagraphs']))
                         @foreach($slide['subparagraphs'] as $subparagraph)
-                            @include('includes.slide',
+                            @include('includes.2020.slide',
                                 [
                                     'id' => transliteration($slide['name']).'_'.transliteration($subparagraph['name']),
                                     'img' => $subparagraph['img'],
