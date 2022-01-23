@@ -8,7 +8,7 @@ Extra extra large	xxl	≥1400px
 
 /* sm */
 @media (min-width: 0px){
-    * {
+    * :not(.field-item *){
         font-size: 14px;
     }
 
@@ -22,14 +22,14 @@ Extra extra large	xxl	≥1400px
 
 /* md */
 @media (min-width: 576px){
-    * {
+    * :not(.field-item *){
         font-size: 14px;
     }
 }
 
 /* lg */
 @media (min-width: 768px){
-    * {
+    * :not(.field-item *){
         font-size: 16px;
     }
 
@@ -41,7 +41,7 @@ Extra extra large	xxl	≥1400px
 
 /* xl */
 @media (min-width: 992px){
-    * {
+    * :not(.field-item *){
         font-size: 16px;
     }
 
@@ -52,13 +52,17 @@ body, html {
 }
 
 * {
-    color: black;
+    /* color: black; */
     list-style-type: none;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     -ms-scroll-snap-type: y proximity;
         scroll-snap-type: y proximity;
     box-sizing: border-box !important;
+}
+
+.field-item {
+    border: solid black;
 }
 
 .h-100 {

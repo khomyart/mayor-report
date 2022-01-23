@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Reports;
+
+use App\Models\Report;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +18,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('list_of_reports');
+    return view('list_of_reports', ['reports' => Report::orderByDesc('published_at')->where('deleted_at', NULL)->get()->toArray()]);
 })->name('list_of_reports');
+
+Route::get('/report/{year}', function($year) {
+    $report = Report::where('year', $year)->get()->first();
+    return view('report', ['year' => $year, 'bookUrl' => $report->reportBook["path_to_report_book"]]);
+})->name('report');
+
+Route::get('/report/{year}/detail', [Reports::class, 'showReportDetail'])
+->name('report_detail');
+
+Route::get('/report/{year}/presentation', [Reports::class, 'showReportPresentation'])
+->name('report_presentation');
+
+//AWAY
+Route::get('/control', function() {
+    return redirect()->away('http://localhost:8000');
+});
+
 
 #2020
 Route::get('/2020', function () {
@@ -29,16 +50,3 @@ Route::get('/2020/presentation', function () {
 Route::get('/2020/detail', function () {
     return view('reports/2020/report_2020_detail');
 })->name('report_2020_detail');
-
-#2021
-Route::get('/2021', function () {
-    return view('reports/2021/report_2021');
-})->name('report_2021');
-
-Route::get('/2021/presentation', function () {
-    return view('reports/2021/report_2021_presentation');
-})->name('report_2021_presentation');
-
-Route::get('/2021/detail', function () {
-    return view('reports/2021/report_2021_detail');
-})->name('report_2021_detail');

@@ -60,6 +60,8 @@ $breadcrumbs = [
  *  - axis — name for axis
  *  - suffix — suffix of an every data label
  *  - isVerbalRoundingEnabled — is verbal rounding enabled (true/false) (145000 to 145 тис.)
+ *  - isVerbalRoundingEnabledForHoveredLabels - is verbal rounding enabled (true/false) (145000 to 145 тис.) when hover
+ *  - isDataLabelsShown - is data labels shown (actual value of each parameter)
  *  - dataset — dataset for current chart
  *    - label — data label
  *    - value — data value
@@ -78,6 +80,7 @@ $breadcrumbs = [
                 'y' => ''
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -112,14 +115,14 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
-            'isVerbalRoundingEnabledForHoveredLabels' => 'yes',
+            'isVerbalRoundingEnabledForHoveredLabels' => 'true',
             'dataset' => [
                 ['label' => 'Загальний фонд', 'value' => '1701400000'],
                 ['label' => 'Міжбюджетні трансферти', 'value' => '492900000'],
                 ['label' => 'Спеціальний фонд', 'value' => '134200000'],
                 ['label' => 'Бюджет розвитку', 'value' => '33000000'],
-
             ]
         ],
          [
@@ -131,6 +134,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'yes',
             'dataset' => [
@@ -149,6 +153,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'false',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -169,6 +174,7 @@ $articles = [
                 'y' => ''
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -212,6 +218,7 @@ $articles = [
                 'y' => ''
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -237,6 +244,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'false',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -256,6 +264,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'false',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -282,6 +291,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -309,6 +319,7 @@ $articles = [
                 'y' => 'одиниці'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'false',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -326,6 +337,7 @@ $articles = [
                 'y' => 'одиниці'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'false',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -343,6 +355,7 @@ $articles = [
                 'y' => 'одиниці'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'false',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -531,6 +544,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -549,6 +563,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'false',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -567,6 +582,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -583,6 +599,7 @@ $articles = [
                 'y' => 'грн'
             ],
             'suffix' => '',
+            'isDataLabelsShown' => 'true',
             'isVerbalRoundingEnabled' => 'true',
             'isVerbalRoundingEnabledForHoveredLabels' => 'false',
             'dataset' => [
@@ -836,6 +853,7 @@ foreach($articles as $key => $article) {
                 arrayWithData = chartInstance.data.datasets[0].data.map(element => parseInt(element)),
                 showVerbalRounding = chartData.isVerbalRoundingEnabled === 'true',
                 showVerbalRoundingForHoveredLabels = chartData.isVerbalRoundingEnabledForHoveredLabels === 'true',
+                showDataLabels = chartData.isDataLabelsShown === 'true',
                 barsBackgroundsColors = [];
 
             chartInstance.data.datasets[0].barPercentage = 0.7;
@@ -889,6 +907,7 @@ foreach($articles as $key => $article) {
                 },
                 plugins: {
                     datalabels: {
+                        display: showDataLabels,
                         anchor: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 'center' : 'end',
                         align: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 'end' :
                                 chartInstance.type === 'horizontalBar' ? 'end' : 'top',
