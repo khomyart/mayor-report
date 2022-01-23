@@ -9,7 +9,7 @@
     });
 </script>
 
-<section id="{{transliteration($article['name'])}}">
+<section id="{{transliteration($article['name'])."_{$key}"}}">
     <h4 class="section-header mb-4">
         <a class="section-header-link" href="#{{transliteration($article['name'])}}">{{$article['name']}}</a>
         <div class="btn-group question-mark-container">
@@ -18,10 +18,13 @@
                 /?
             </button>
             <ul class="dropdown-menu shadow-sm question-mark-context-menu mt-2">
-{{--                <li class="question-mark-context-menu-list-item">--}}
-{{--                    <a class="question-mark-context-menu-links" href="{{ $article['additional_content_url'] }}">Додаткові--}}
-{{--                        матеріали</a>--}}
-{{--                </li>--}}
+                @if ($article["additional_content_url"] != null)
+                    <li class="question-mark-context-menu-list-item">
+                        <a class="question-mark-context-menu-links" href="{{ env('ADMIN_PANEL_URL').preg_replace('/public/', '/storage', $article['additional_content_url']) }}">
+                            Додаткові матеріали
+                        </a>
+                    </li>
+                @endif
                 <li class="question-mark-context-menu-list-item">
                     <a class="question-mark-context-menu-links" href="https://www.lutskrada.gov.ua/electronic-appeal/request">Задати питання</a>
                 </li>
@@ -37,7 +40,7 @@
     (() => {
         let
             currentArticle = articlesVariables[articlesVariables.length - 1],
-            chartCanvases = document.querySelectorAll('.{{transliteration($article['name'])}}_chart');
+            chartCanvases = document.querySelectorAll('.{{ "a_".transliteration($article['name'])."_{$key}"}}_chart');
 
         if (chartCanvases.length <= currentArticle.charts.incomingData.length) {
             /*

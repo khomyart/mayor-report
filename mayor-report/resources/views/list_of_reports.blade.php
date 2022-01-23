@@ -12,47 +12,41 @@
 @endsection
 
 @php
-    $reports =
-    [
-        [
-            'year' => 2020,
-            'published' => '20 лютого 2021 року',
-            'url' => 'report_2020',
-            'banner' => '2020.png'
-        ],
-        /*
-        [
-            'year' => 2021,
-            'published' => '2 лютого 2022 року',
-            'url' => 'report_2021',
-            'banner' => '2021.png'
-        ],
-        [
-            'year' => 2022,
-            'published' => '1 лютого 2023 року',
-            'url' => 'report_2020',
-            'banner' => '2020.png'
-        ],
-        [
-            'year' => 2023,
-            'published' => '2 лютого 2024 року',
-            'url' => 'report_2021',
-            'banner' => '2021.png'
-        ],
-        [
-            'year' => 2024,
-            'published' => '1 лютого 2025 року',
-            'url' => 'report_2020',
-            'banner' => '2020.png'
-        ],
+    /**
+     * dateInput string - date with format yyyy-mm-dd
+     * 
+     */
+    function getConvertedDate($dateInput) {
+        $months = [
+            "January" => "січня",
+            "February" => "лютого",
+            "March" => "березня",
+            "April" => "квітня",
+            "May" => "травня",
+            "June" => "червня",
+            "July" => "липня",
+            "August" => "серпня",
+            "September" => "вересня",
+            "October" => "жовтня",
+            "November" => "листопада",
+            "December" => "грудня"
+        ];
 
-        [
-            'year' => 2025,
-            'published' => '2 лютого 2026 року',
-            'url' => 'report_2021',
-            'banner' => '2021.png'
-        ]*/
-    ];
+        $preConvertedDateInput = getDate(strtotime($dateInput));
+
+        $convertedDate = "{$preConvertedDateInput["mday"]} {$months[$preConvertedDateInput["month"]]} {$preConvertedDateInput["year"]} року"; 
+
+        return $convertedDate;
+    }
+
+    /* Template
+    [
+        'year' => 2021,
+        'published' => '2 лютого 2022 року',
+        'url' => 'report_2021',
+        'banner' => '2021.png'
+    ],
+    ]*/
 @endphp
 
 @section('content')
@@ -74,14 +68,24 @@
         <div class="row mt-5 d-flex align-items-center flex-column justify-content-start">
                     <div class="mt-lg-5"></div>
             @foreach($reports as $report)
-                <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
-                     onclick="location.href='{{ route($report['url']) }}';">
-                    <p class="mb-4">{{ $report['year'] }}</p>
-                    <p class="col-4 col-md-6" style="z-index: 30; position: absolute; font-weight: bolder">Опубліковано:<br> {{ $report['published'] }}</p>
-                    <img class="report-card-banner" src="{{ asset('img/report_banners_main_page/'.$report['banner']) }}"
-                         alt="banner">
-                </div>
+                @if($report["is_active"] == 'true')
+                    <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
+                        onclick="location.href='{{ route('report', $report['year']) }}';">
+                        <p class="mb-4">{{ $report['year'] }}</p>
+                        <p class="col-4 col-md-6" style="z-index: 30; position: absolute; font-weight: bolder">Опубліковано:<br> {{ getConvertedDate($report['published_at']) }}</p>
+                        <img class="report-card-banner" src="{{ env('ADMIN_PANEL_URL').preg_replace('/public/', '/storage', $report['img_src']) }}"
+                            alt="banner">
+                    </div>
+                @endif
             @endforeach
+
+            <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
+                    onclick="location.href='{{ route('report_2020') }}';">
+                <p class="mb-4">{{ 2020 }}</p>
+                <p class="col-4 col-md-6" style="z-index: 30; position: absolute; font-weight: bolder">Опубліковано:<br> {{ '20 лютого 2021 року' }}</p>
+                <img class="report-card-banner" src="{{ asset('img/report_banners_main_page/2020.png') }}"
+                        alt="banner">
+            </div>
         </div>
         <div class="row mt-2 d-flex align-items-center flex-column justify-content-center">
             <div class="col-12 col-sm-10 col-md-9 col-xl-7 mt-2 d-flex align-items-end justify-content-center footer">

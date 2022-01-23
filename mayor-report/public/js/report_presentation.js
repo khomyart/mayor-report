@@ -7,6 +7,7 @@ var slideRation = 1.4; //a4 ration (1.4 - default)
 
 var slidesContainer = document.querySelector('.presentation-container');
 var elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]');
+var elementsWithResizablePadding = document.querySelectorAll('[paddingMultiplier]');
 var elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]');
 var elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]');
 var elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]');
@@ -24,6 +25,9 @@ window.onload = function () {
     var fontSizeUnit = slides[0].offsetWidth / 100;
     var fontSizeMultiplier = e.getAttribute('fontSizeMultiplier');
     e.style.fontSize = "".concat(fontSizeUnit * fontSizeMultiplier, "px");
+    e.childNodes.forEach(function (childNode) {
+      childNode.style.fontSize = "".concat(fontSizeUnit * fontSizeMultiplier, "px");
+    });
   });
   elementsWithResizableBorder.forEach(function (e) {
     var borderWidthUnit = slides[0].offsetWidth / 100;
@@ -44,6 +48,11 @@ window.onload = function () {
     marginUnit = slides[0].offsetHeight / 100;
     marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
     e.style.marginBottom = "".concat((marginUnit * marginBottomMultiplier).toFixed(), "px");
+  });
+  elementsWithResizablePadding.forEach(function (e) {
+    var paddingUnit = slides[0].offsetWidth / 100;
+    var paddingMultiplier = e.getAttribute('paddingMultiplier');
+    e.style.padding = "".concat(paddingUnit * paddingMultiplier);
   });
   elementWithCustomTopPosition.forEach(function (e) {
     var cYparam = e.getAttribute('cY');
@@ -91,6 +100,11 @@ window.onresize = function () {
     marginUnit = slides[0].offsetHeight / 100;
     marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
     e.style.marginBottom = "".concat((marginUnit * marginBottomMultiplier).toFixed(), "px");
+  });
+  elementsWithResizablePadding.forEach(function (e) {
+    var paddingUnit = slides[0].offsetWidth / 100;
+    var paddingMultiplier = e.getAttribute('paddingMultiplier');
+    e.style.padding = "".concat(paddingUnit * paddingMultiplier);
   });
   elementWithCustomTopPosition.forEach(function (e) {
     var cYparam = e.getAttribute('cY');

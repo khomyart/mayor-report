@@ -2,6 +2,7 @@ let slides = document.querySelectorAll('.slide-container');
 let slideRation = 1.4 //a4 ration (1.4 - default)
 let slidesContainer = document.querySelector('.presentation-container');
 let elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]')
+let elementsWithResizablePadding = document.querySelectorAll('[paddingMultiplier]')
 let elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]')
 let elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]')
 let elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]')
@@ -20,6 +21,10 @@ window.onload = function () {
         let fontSizeUnit = slides[0].offsetWidth / 100;
         let fontSizeMultiplier = e.getAttribute('fontSizeMultiplier');
         e.style.fontSize = `${fontSizeUnit * fontSizeMultiplier}px`;
+
+        e.childNodes.forEach((childNode)=>{
+            childNode.style.fontSize = `${fontSizeUnit * fontSizeMultiplier}px`;
+        }) 
     })
 
     elementsWithResizableBorder.forEach(e => {
@@ -44,6 +49,12 @@ window.onload = function () {
         marginUnit = slides[0].offsetHeight/100;
         marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
         e.style.marginBottom = `${(marginUnit * marginBottomMultiplier).toFixed()}px`;
+    })
+
+    elementsWithResizablePadding.forEach(e => {
+        let paddingUnit = slides[0].offsetWidth / 100;
+        let paddingMultiplier = e.getAttribute('paddingMultiplier');
+        e.style.padding = `${paddingUnit * paddingMultiplier}`;
     })
 
     elementWithCustomTopPosition.forEach(e => {
@@ -99,6 +110,12 @@ window.onresize = function () {
         marginUnit = slides[0].offsetHeight/100;
         marginBottomMultiplier = e.getAttribute('marginBottomMultiplier');
         e.style.marginBottom = `${(marginUnit * marginBottomMultiplier).toFixed()}px`;
+    })
+
+    elementsWithResizablePadding.forEach(e => {
+        let paddingUnit = slides[0].offsetWidth / 100;
+        let paddingMultiplier = e.getAttribute('paddingMultiplier');
+        e.style.padding = `${paddingUnit * paddingMultiplier}`;
     })
 
     elementWithCustomTopPosition.forEach(e => {
