@@ -907,7 +907,7 @@ foreach($articles as $key => $article) {
                 },
                 plugins: {
                     datalabels: {
-                        display: showDataLabels,
+                        display: !(chartInstance.type === 'pie' || chartInstance.type === 'doughnut'),
                         anchor: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 'center' : 'end',
                         align: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 'end' :
                                 chartInstance.type === 'horizontalBar' ? 'end' : 'top',
