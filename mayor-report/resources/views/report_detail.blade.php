@@ -348,7 +348,11 @@ foreach($articles as $key => $article) {
                         offset: chartInstance.type !== 'horizontalBar',
                         ticks: {
                             callback: function(value, index, values) {
-                                if (showVerbalRounding == 'true' ||
+                                if (chartInstance.type != 'horizontalBar') {
+                                    return value;
+                                }
+
+                                if (showVerbalRounding == 'true' || 
                                     showVerbalRounding == true) {
                                     if (value >= 1000 && value < 1000000) {
                                         return `${(value/1000).toFixed(1)} тис.${dataLabelSuffix}`;
@@ -379,6 +383,10 @@ foreach($articles as $key => $article) {
                         },
                         ticks: {
                             callback: function(value, index, values) {
+                                if (chartInstance.type == 'horizontalBar') {
+                                    return value;
+                                }
+
                                 if (showVerbalRounding == 'true' ||
                                     showVerbalRounding == true) {
                                     if (value >= 1000 && value < 1000000) {

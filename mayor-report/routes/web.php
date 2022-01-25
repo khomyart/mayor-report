@@ -34,7 +34,7 @@ Route::get('/report/{year}/presentation', [Reports::class, 'showReportPresentati
 
 //AWAY
 Route::get('/control', function() {
-    return redirect()->away('http://localhost:8000');
+    return redirect()->away(env('ADMIN_PANEL_URL'));
 });
 
 

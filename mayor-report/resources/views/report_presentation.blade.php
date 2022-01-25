@@ -171,15 +171,8 @@
             <nav id="presentation">
                 <nav class="nav nav-pills flex-column">
                     @foreach($presentation as $slide)
-
-                        @if($loop->first)
-                            <a class="nav-link main-paragraph active"
-                               href="#{{ transliteration($slide['name'])."_{$slide["id"]}" }}">{{ $slide['name'] }}</a>
-                            @continue
-                        @endif
-
-                            <a class="nav-link main-paragraph"
-                               href="#{{ transliteration($slide['name'])."_{$slide["id"]}" }}">{{ $slide['name'] }}</a>
+                        <a class="nav-link main-paragraph {{ $loop->first ? 'active' : '' }}"
+                            href="#{{ transliteration($slide['name'])."_{$slide["id"]}" }}">{{ $slide['name'] }}</a>
 
                         @if(isset($slide['subparagraphs']) && !empty($slide['subparagraphs']))
                             @foreach($slide['subparagraphs'] as $subparagraph)
