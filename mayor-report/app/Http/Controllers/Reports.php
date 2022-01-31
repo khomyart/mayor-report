@@ -99,4 +99,44 @@ class Reports extends Controller
             'presentation' => $compiledPresentation,
         ]);
     }
+
+    public function showReportApi($year) {
+        $report = Report::where('year', $year)->get()->first()->toArray();
+        $report['articles'] = Article::where('report_id', $report["id"])->orderBy('number_in_list')->get()->toArray();
+        
+        foreach($report["articles"] as $articleKey => $article) {
+
+            //editing article structure acording to api needs
+            unset($report["articles"][$articleKey]['id']);
+            unset($report["articles"][$articleKey]['report_id']);
+            unset($report["articles"][$articleKey]['number_in_list']);
+            unset($report["articles"][$articleKey]['path_to_additional_content']);
+            unset($report["articles"][$articleKey]['created_at']);
+            unset($report["articles"][$articleKey]['updated_at']);
+            unset($report["articles"][$articleKey]['deleted_at']);
+            
+            $report["articles"][$articleKey]["charts"] = Chart::where('article_id', $article["id"])->orderBy("number_in_list")->get()->toArray();
+            foreach($report["articles"][$articleKey]["charts"] as $chartKey => $chart) {
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["id"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["article_id"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["number_in_list"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["type"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["is_data_labels_shown"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["is_verbal_rounding_enabled"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["is_verbal_rounding_enabled_for_hovered_labels"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["created_at"]);
+                unset($report["articles"][$articleKey]["charts"][$chartKey]["updated_at"]);
+
+                $report["articles"][$articleKey]["charts"][$chartKey]["dataset"] = ChartDataset::where('chart_id', $chart["id"])->get()->toArray();
+                foreach ($report["articles"][$articleKey]["charts"][$chartKey]["dataset"] as $datasetKey => $dataset) {
+                    unset($report["articles"][$articleKey]["charts"][$chartKey]["dataset"][$datasetKey]["id"]);
+                    unset($report["articles"][$articleKey]["charts"][$chartKey]["dataset"][$datasetKey]["chart_id"]);
+                    unset($report["articles"][$articleKey]["charts"][$chartKey]["dataset"][$datasetKey]["created_at"]);
+                    unset($report["articles"][$articleKey]["charts"][$chartKey]["dataset"][$datasetKey]["updated_at"]);
+                }
+            }
+        }
+
+        return $report["articles"];
+    }
 }

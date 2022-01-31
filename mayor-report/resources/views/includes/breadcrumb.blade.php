@@ -12,6 +12,9 @@
                     <li class="breadcrumb-item breadcrumb-active" aria-current="page">{{ $breadcrumb['name'] }}</li>
                 @endif
             @endforeach
+            @if(count($breadcrumbs) <= 2)
+                <li class="breadcrumb-item">( <a href="{{ route('report_api', $breadcrumbs[1]['name'] ) }}">API</a> <a href="{{ route('report_api_description') }}"> ?</a> )</li>
+            @endif
         </ol>
     </nav>
 </div>

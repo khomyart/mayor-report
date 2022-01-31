@@ -20,7 +20,11 @@
         ],
         [
             'name' => $year
-        ]
+        ],
+        // [
+        //     'name' => '(API)',
+        //     'url' => ['report_api', $year],
+        // ]
     ];
 
     $list_of_views =

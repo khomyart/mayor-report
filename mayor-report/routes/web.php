@@ -32,11 +32,18 @@ Route::get('/report/{year}/detail', [Reports::class, 'showReportDetail'])
 Route::get('/report/{year}/presentation', [Reports::class, 'showReportPresentation'])
 ->name('report_presentation');
 
+//API
+Route::get('/report/{year}/api', [Reports::class, 'showReportApi'])
+->name('report_api');
+
+Route::get('/reports/api/description', function() {
+    return view('report_api_description');
+})->name('report_api_description');
+
 //AWAY
 Route::get('/control', function() {
     return redirect()->away(env('ADMIN_PANEL_URL'));
 });
-
 
 #2020
 Route::get('/2020', function () {
