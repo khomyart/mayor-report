@@ -22,5 +22,3 @@ mix .js('resources/js/app.js', 'public/js')
     .postCss('resources/css/report_view_selection.css', 'public/css')
     .postCss('resources/css/report_presentation.css', 'public/css')
     .postCss('resources/css/report_detail.css', 'public/css');
-
-
