@@ -250,7 +250,7 @@ foreach($articles as $key => $article) {
                                 } else if (currentItemData >= 1000000 && currentItemData < 1000000000) {
                                     return `${label}${(currentItemData/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
                                 } else if (currentItemData >= 1000000000) {
-                                    return `${label}${(currentItemData/1000000000).toFixed(1)} млрд.${dataLabelSuffix}`;
+                                    return `${label}${(currentItemData/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
                                 } else {
                                     return `${label}${currentItemData}${dataLabelSuffix}`;
                                 }
@@ -283,7 +283,7 @@ foreach($articles as $key => $article) {
                                 } else if (value >= 1000000 && value < 1000000000) {
                                     return `${(value/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
                                 } else if (value >= 1000000000) {
-                                    return `${(value/1000000000).toFixed(1)} млрд.${dataLabelSuffix}`;
+                                    return `${(value/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
                                 } else {
                                     return `${value}${dataLabelSuffix}`;
                                 }
@@ -359,7 +359,7 @@ foreach($articles as $key => $article) {
                                     } else if (value >= 1000000 && value < 1000000000) {
                                         return `${(value/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
                                     } else if (value >= 1000000000) {
-                                        return `${(value/1000000000).toFixed(1)} млрд.${dataLabelSuffix}`;
+                                        return `${(value/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
                                     } else {
                                         return `${value}${dataLabelSuffix}`;
                                     }
@@ -394,7 +394,7 @@ foreach($articles as $key => $article) {
                                     } else if (value >= 1000000 && value < 1000000000) {
                                         return `${(value/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
                                     } else if (value >= 1000000000) {
-                                        return `${(value/1000000000).toFixed(1)} млрд.${dataLabelSuffix}`;
+                                        return `${(value/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
                                     } else {
                                         return `${value}${dataLabelSuffix}`;
                                     }
