@@ -31,7 +31,7 @@
             </ul>
         </div>
     </h4>
-    <div class="col-12 d-flex flex-column align-items-center" id="{{transliteration($article['name']).'_content'}}">
+    <div class="col-12 d-flex flex-column" id="{{transliteration($article['name']).'_content'}}">
         {!! $article['content'] !!}
     </div>
 </section>

@@ -136,20 +136,111 @@ foreach($articles as $key => $article) {
             };
         }
 
+        /**
+        * Cuts incoming string into pieces with length wich are close to "symbolsPerLine" number and places them into array 
+        * 
+        * @param {number} symbolsPerLine 
+        * @param {string} string 
+        * @returns 
+        */
+        function stringCut(symbolsPerLine, string) {
+            function findClosestSpaceToSymbolsPerLineNumberInString(lengthPerLine, string) {
+                let spaceIndexes = [];
+                let closestSpaces = [];
+                let previousDifference;
+                let currentClosestSpaceIndex;
+            
+                for (let i = 0; i < string.length; i++) {
+                    if (string[i] === ' ') {
+                        spaceIndexes.push(i);
+                    }
+                }
+            
+                for (let i = 1; spaceIndexes[spaceIndexes.length-1] > lengthPerLine; i++) {
+                    lengthPerLine = lengthPerLine * i;
+                    spaceIndexes.forEach((spaceIndex, index)=>{
+                        if (index == 0) { previousDifference = Math.abs(lengthPerLine - spaceIndex) }
+                        else if (previousDifference > Math.abs(lengthPerLine - spaceIndex)) { 
+                            currentClosestSpaceIndex = spaceIndex;
+                            previousDifference = Math.abs(lengthPerLine - spaceIndex);
+                            closestSpaces[i-1] = spaceIndex;
+                        }
+                    })
+                }
+                //deletes last space
+                closestSpaces.pop();
+            
+                return closestSpaces;
+            }
+            
+            function devideStringBySpaceIndexes(closestSpaceIndexes, string) {
+                let devidedString = [];
+                let tempString;
+                closestSpaceIndexes.unshift(0)
+                closestSpaceIndexes.push(string.length)
+            
+                for (let i = 0; i < closestSpaceIndexes.length - 1; i++) {
+                    tempString = '';
+            
+                    for (let j = i == 0 ? closestSpaceIndexes[i] : closestSpaceIndexes[i] + 1; j < closestSpaceIndexes[i+1]; j++) {
+                        tempString += string[j]
+                    }
+            
+                    devidedString[i] = tempString
+                }
+            
+                return devidedString;
+            }
+
+            if (string.length < symbolsPerLine * 1.5) 
+            {
+                return string
+            } else {
+                return devideStringBySpaceIndexes(findClosestSpaceToSymbolsPerLineNumberInString(symbolsPerLine, string), string)
+            }
+        }
+
         function optimizeCanvasSize(canvas, chartData) {
             function optimizeCanvasHeight(chartHeight, multiplier) {
+                chartHeight = multiplier == 4 ? chartHeight : chartHeight * 0.8;
+
                 if (chartData.type === 'pie' ||
                     chartData.type === 'doughnut') {
                     canvas.width = '100';
-                    canvas.height = (chartHeight + chartData.dataset.length * multiplier).toString();
+                    //multiplier 4 is for portrait orientation
+                    if (multiplier == 4) {
+                        canvas.height = ((chartHeight + (chartData.dataset.length * 2) * multiplier + chartData.title.length * 0.1) * 0.9).toString();
+                    } else {
+                        canvas.height = ((chartHeight + (chartData.dataset.length * 0.8) * multiplier  + chartData.title.length * 0.1) * 0.9).toString();
+                    }
                 } else {
                     //if chart has additional strings to their title, height of canvas will be increased
                     if (typeof chartData.title === 'object') {
                         canvas.height = (chartHeight + chartData.title.length * multiplier).toString();
                         canvas.width = '80';
                     } else {
-                        canvas.height = chartHeight.toString();
-                        canvas.width = '80';
+                        //if we have a lot elements inside dataset in "bar" chart, we should calculate height of it
+                        //depends on largest dataset label in list
+                        if (chartData.dataset.length > 4) {
+                            let longestLabelInDatasetLength;
+
+                            chartData.dataset.forEach((elem, index)=>{
+                                if (index == 0) {
+                                    longestLabelInDatasetLength = elem.label.length;
+                                } else {
+                                    longestLabelInDatasetLength = longestLabelInDatasetLength < elem.label.length ?
+                                        elem.label.length : longestLabelInDatasetLength;                                     
+                                }
+                            })
+
+                            console.log(longestLabelInDatasetLength);
+
+                            canvas.height = (chartHeight + longestLabelInDatasetLength * (multiplier / 4) ).toString();
+                            canvas.width = '80';
+                        } else {
+                            canvas.height = chartHeight.toString();
+                            canvas.width = '80';
+                        }
                     }
                 }
             }
@@ -209,7 +300,7 @@ foreach($articles as $key => $article) {
             let
                 type = chartInstance.type,
                 legend = chartData.legend,
-                name = chartData.title,
+                name = stringCut(35, chartData.title),
                 axisNames = chartData.axis,
                 dataLabelSuffix = chartData.suffix,
                 arrayWithData = chartInstance.data.datasets[0].data.map(element => parseInt(element)),
@@ -230,7 +321,7 @@ foreach($articles as $key => $article) {
                     fontSize: 16,
                     fontColor: 'black',
                     fontFamily: '\'Open Sans\', sans-serif',
-                    padding: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 0 : 20,
+                    padding: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 0 : 10,
                 },
                 tooltips: {
                     titleFontSize: 14,
@@ -271,6 +362,7 @@ foreach($articles as $key => $article) {
                 },
                 plugins: {
                     datalabels: {
+                        padding: 0,
                         display: !(chartInstance.type === 'pie' || chartInstance.type === 'doughnut'),
                         anchor: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 'center' : 'end',
                         align: (chartInstance.type === 'pie' || chartInstance.type === 'doughnut') ? 'end' :
@@ -299,7 +391,7 @@ foreach($articles as $key => $article) {
                     }
                 }
             }
-
+            
             if (chartInstance.type === 'line') {
                 chartInstance.data.datasets[0].fill = false;
                 /*
