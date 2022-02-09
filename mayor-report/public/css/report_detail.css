@@ -264,6 +264,7 @@ Extra extra large	xxl	≥1400px
 .question-mark-context-menu-list-item {
     width: 11rem;
     margin-bottom: 0.7rem;
+    list-style-type: none !important;
 }
 
 .question-mark-context-menu-links {

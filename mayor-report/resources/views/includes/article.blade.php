@@ -11,7 +11,7 @@
 
 <section id="{{transliteration($article['name'])."_{$key}"}}">
     <h4 class="section-header mb-4">
-        <a class="section-header-link" href="#{{transliteration($article['name'])}}">{{$article['name']}}</a>
+        <a class="section-header-link" href="#{{transliteration($article['name'])."_{$key}"}}">{{$article['name']}}</a>
         <div class="btn-group question-mark-container">
             <button class="question-mark-button" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
