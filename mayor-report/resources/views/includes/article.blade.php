@@ -26,7 +26,7 @@
                     </li>
                 @endif
                 <li class="question-mark-context-menu-list-item">
-                    <a class="question-mark-context-menu-links" href="https://www.lutskrada.gov.ua/electronic-appeal/request">Задати питання</a>
+                    <a class="question-mark-context-menu-links" href="https://www.lutskrada.gov.ua/electronic-appeal/request">Задати запитання</a>
                 </li>
             </ul>
         </div>

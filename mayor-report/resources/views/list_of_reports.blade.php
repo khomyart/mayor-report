@@ -79,13 +79,13 @@
                 @endif
             @endforeach
 
-            <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
+            {{-- <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
                     onclick="location.href='{{ route('report_2020') }}';">
                 <p class="mb-4">{{ 2020 }}</p>
                 <p class="col-4 col-md-6" style="z-index: 30; position: absolute; font-weight: bolder">Опубліковано:<br> {{ '20 лютого 2021 року' }}</p>
                 <img class="report-card-banner" src="{{ asset('img/report_banners_main_page/2020.png') }}"
                         alt="banner">
-            </div>
+            </div> --}}
         </div>
         <div class="row mt-2 d-flex align-items-center flex-column justify-content-center">
             <div class="col-12 col-sm-10 col-md-9 col-xl-7 mt-2 d-flex align-items-end justify-content-center footer">

@@ -34,7 +34,7 @@
 
     $breadcrumbs = [
      [
-         'name' => 'Перелік звітів',
+         'name' => 'Звіти',
          'url' => 'list_of_reports',
      ],
      [
