@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Re post meta tags -->
-    <meta property="og:url"                content="http://reports.lutskrada.gov.ua/">
-    <meta property="og:image"              content="http://reports.lutskrada.gov.ua/img/banner.png" />
+    <meta property="og:url"                content="{{ url('/') }}">
+    <meta property="og:image"              content="{{ url('/').'/img/banner1.png' }}" />
     <meta property="og:type"               content="website" />
+    <meta property="og:description"        content="" />
+    <meta property="og:title"              content="Звіт міського голови" />
     <meta property="og:description"        content="" />
     @section('css_import')
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
