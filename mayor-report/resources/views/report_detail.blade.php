@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Детальний звіт про роботу виконавчих органів')
+@section('title', 'Детальний звіт міського голови за ' .$year. ' рік')
 
 @section('css_import')
     @parent
