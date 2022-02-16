@@ -60,8 +60,8 @@ $breadcrumbs = [
  *  - type — type of a chart (pie, doughnut, bar, horizontalBar, line?)
  *  - axis — name for axis
  *  - suffix — suffix of an every data label
- *  - isVerbalRoundingEnabled — is verbal rounding enabled (true/false) (145000 to 145 тис.)
- *  - isVerbalRoundingEnabledForHoveredLabels - is verbal rounding enabled (true/false) (145000 to 145 тис.) when hover
+ *  - isVerbalRoundingEnabled — is verbal rounding enabled (true/false) (145000 to 145 тис)
+ *  - isVerbalRoundingEnabledForHoveredLabels - is verbal rounding enabled (true/false) (145000 to 145 тис) when hover
  *  - isDataLabelsShown - is data labels shown (actual value of each parameter)
  *  - dataset — dataset for current chart
  *    - label — data label
@@ -338,11 +338,11 @@ foreach($articles as $key => $article) {
                             if (showVerbalRoundingForHoveredLabels == 'true' ||
                                 showVerbalRoundingForHoveredLabels == true) {
                                 if (currentItemData >= 1000 && currentItemData < 1000000) {
-                                    return `${label}${(currentItemData/1000).toFixed(1)} тис.${dataLabelSuffix}`;
+                                    return `${label}${(currentItemData/1000).toFixed(1)} тис${dataLabelSuffix}`;
                                 } else if (currentItemData >= 1000000 && currentItemData < 1000000000) {
-                                    return `${label}${(currentItemData/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
+                                    return `${label}${(currentItemData/1000000).toFixed(1)} млн${dataLabelSuffix}`;
                                 } else if (currentItemData >= 1000000000) {
-                                    return `${label}${(currentItemData/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
+                                    return `${label}${(currentItemData/1000000000).toFixed(3)} млрд${dataLabelSuffix}`;
                                 } else {
                                     return `${label}${currentItemData}${dataLabelSuffix}`;
                                 }
@@ -372,11 +372,11 @@ foreach($articles as $key => $article) {
                             if (showVerbalRounding == 'true' ||
                                 showVerbalRounding == true) {
                                 if (value >= 1000 && value < 1000000) {
-                                    return `${(value/1000).toFixed(1)} тис.${dataLabelSuffix}`;
+                                    return `${(value/1000).toFixed(1)} тис${dataLabelSuffix}`;
                                 } else if (value >= 1000000 && value < 1000000000) {
-                                    return `${(value/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
+                                    return `${(value/1000000).toFixed(1)} млн${dataLabelSuffix}`;
                                 } else if (value >= 1000000000) {
-                                    return `${(value/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
+                                    return `${(value/1000000000).toFixed(3)} млрд${dataLabelSuffix}`;
                                 } else {
                                     return `${value}${dataLabelSuffix}`;
                                 }
@@ -448,11 +448,11 @@ foreach($articles as $key => $article) {
                                 if (showVerbalRounding == 'true' || 
                                     showVerbalRounding == true) {
                                     if (value >= 1000 && value < 1000000) {
-                                        return `${(value/1000).toFixed(1)} тис.${dataLabelSuffix}`;
+                                        return `${(value/1000).toFixed(1)} тис${dataLabelSuffix}`;
                                     } else if (value >= 1000000 && value < 1000000000) {
-                                        return `${(value/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
+                                        return `${(value/1000000).toFixed(1)} млн${dataLabelSuffix}`;
                                     } else if (value >= 1000000000) {
-                                        return `${(value/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
+                                        return `${(value/1000000000).toFixed(3)} млрд${dataLabelSuffix}`;
                                     } else {
                                         return `${value}${dataLabelSuffix}`;
                                     }
@@ -483,11 +483,11 @@ foreach($articles as $key => $article) {
                                 if (showVerbalRounding == 'true' ||
                                     showVerbalRounding == true) {
                                     if (value >= 1000 && value < 1000000) {
-                                        return `${(value/1000).toFixed(1)} тис.${dataLabelSuffix}`;
+                                        return `${(value/1000).toFixed(1)} тис${dataLabelSuffix}`;
                                     } else if (value >= 1000000 && value < 1000000000) {
-                                        return `${(value/1000000).toFixed(1)} млн.${dataLabelSuffix}`;
+                                        return `${(value/1000000).toFixed(1)} млн${dataLabelSuffix}`;
                                     } else if (value >= 1000000000) {
-                                        return `${(value/1000000000).toFixed(3)} млрд.${dataLabelSuffix}`;
+                                        return `${(value/1000000000).toFixed(3)} млрд${dataLabelSuffix}`;
                                     } else {
                                         return `${value}${dataLabelSuffix}`;
                                     }
