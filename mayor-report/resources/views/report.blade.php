@@ -32,7 +32,7 @@
         [
             'id' => 'presentation',
             'name' => 'Презентація',
-            'description' => 'Коротке представлення звіту Луцької міської ради у вигляді змістовної презентації',
+            'description' => 'Коротке представлення звіту у вигляді змістовної презентації',
             'thumbnail' => ['report_view_selection_presentation_1.png', 'report_view_selection_presentation_2.png'],
             'url' => 'report_presentation', //url name for route()
             'thumbnail_prefix' => asset('img/report_view_selection/')
@@ -40,7 +40,7 @@
         [
             'id' => 'detail',
             'name' => 'Детальний звіт',
-            'description' => 'Детальне представлення звіту Луцької міської ради у вигляді графіків, статей',
+            'description' => 'Детальне представлення звіту у вигляді графіків, статей',
             'thumbnail' => ['report_view_selection_detail_1.png', 'report_view_selection_detail_2.png'],
             'url' => 'report_detail', //url name for route()
             'thumbnail_prefix' => asset('img/report_view_selection/')
@@ -48,7 +48,7 @@
         [
             'id' => 'book',
             'name' => 'Звіт — книжка',
-            'description' => 'Представлення звіту Луцької міської ради у вигляді електронної книги (pdf)',
+            'description' => 'Представлення звіту у вигляді електронної книги (pdf)',
             'thumbnail' => ['report_view_selection_book_1.png', 'report_view_selection_book_2.png'],
             'url' => 'list_of_reports', //url name for route()
             'thumbnail_prefix' => asset('img/report_view_selection/')
