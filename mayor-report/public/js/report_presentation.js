@@ -1,10 +1,11 @@
 /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
 /*!*********************************************!*\
   !*** ./resources/js/report_presentation.js ***!
   \*********************************************/
 var slides = document.querySelectorAll('.slide-container');
 var slideRation = 1.4; //a4 ration (1.4 - default)
-
+var presentationLoader = document.querySelector('.presentation-loader-holder');
 var slidesContainer = document.querySelector('.presentation-container');
 var elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]');
 var elementsWithResizablePadding = document.querySelectorAll('[paddingMultiplier]');
@@ -15,8 +16,8 @@ var elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMult
 var elementWithCustomTopPosition = document.querySelectorAll('[cY]');
 var elementWithCustomLeftPosition = document.querySelectorAll('[cX]');
 var elementWithTransformTransition = document.querySelectorAll('[cAnchor]');
-
 window.onload = function () {
+  presentationLoader.remove();
   slides.forEach(function (e) {
     e.style.height = "".concat(e.offsetWidth / slideRation, "px");
   });
@@ -71,7 +72,6 @@ window.onload = function () {
     e.style.transform = "translate(".concat(cAnchorParam[0], ", ").concat(cAnchorParam[1], ")");
   });
 };
-
 window.onresize = function () {
   slides.forEach(function (e) {
     e.style.height = "".concat(e.offsetWidth / slideRation, "px");
@@ -123,9 +123,8 @@ window.onresize = function () {
     e.style.transform = "translate(".concat(cAnchorParam[0], ", ").concat(cAnchorParam[1], ")");
   });
 };
+
 /* show and hide menu with button */
-
-
 var menuButtons = document.querySelectorAll('.menu-button');
 var menuContainer = document.querySelector('.menu-container');
 var navLinks = document.querySelectorAll('.nav-link');
@@ -151,8 +150,8 @@ menuButtons.forEach(function (menuButton) {
     }
   };
 });
-/* every time when navlink is pressed - hide side menu*/
 
+/* every time when navlink is pressed - hide side menu*/
 navLinks.forEach(function (navLink) {
   navLink.onclick = function () {
     if (window.innerWidth < 768) {

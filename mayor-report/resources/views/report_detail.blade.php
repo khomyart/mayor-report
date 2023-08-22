@@ -60,8 +60,8 @@ $breadcrumbs = [
  *  - type — type of a chart (pie, doughnut, bar, horizontalBar, line?)
  *  - axis — name for axis
  *  - suffix — suffix of an every data label
- *  - isVerbalRoundingEnabled — is verbal rounding enabled (true/false) (145000 to 145 тис)
- *  - isVerbalRoundingEnabledForHoveredLabels - is verbal rounding enabled (true/false) (145000 to 145 тис) when hover
+ *  - isVerbalRoundingEnabled — is verbal rounding enabled (true/false) (145000 to 145 тис.)
+ *  - isVerbalRoundingEnabledForHoveredLabels - is verbal rounding enabled (true/false) (145000 to 145 тис.) when hover
  *  - isDataLabelsShown - is data labels shown (actual value of each parameter)
  *  - dataset — dataset for current chart
  *    - label — data label

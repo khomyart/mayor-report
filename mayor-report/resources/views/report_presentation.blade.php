@@ -157,7 +157,58 @@
 
         let slidesVariables = []
     </script>
-
+    <style>
+        .presentation-loader-holder {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            z-index: 9999999999;
+        },
+        .loader,
+        .loader:after {
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+        }
+        .loader {
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            margin: 60px auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border-top: 1.1em solid rgba(196,18,45, 0.2);
+            border-right: 1.1em solid rgba(196,18,45, 0.2);
+            border-bottom: 1.1em solid rgba(196,18,45, 0.2);
+            border-left: 1.1em solid #c4122d;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load8 1.1s infinite linear;
+            animation: load8 1.1s infinite linear;
+        }
+        @-webkit-keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <div class="presentation-and-menu-container">
         <button class="menu-button col-12 shadow">
             Зміст
@@ -213,14 +264,18 @@
             <div data-bs-spy="scroll" data-bs-target="#presentation"
                  data-bs-offset="100"
                  class="presentation-container" tabindex="0">
+                <div class="presentation-loader-holder">
+                    <div class="loader">Loading...</div>
+                </div>
                 @foreach($presentation as $slide)
                     @include('includes.slide',
-                                    [
-                                        'id' => transliteration($slide['name'])."_{$slide["id"]}",
-                                        'img' => $slide['img'],
-                                        'content' => $slide['content'],
-                                        'img_stretch' => $slide['img_stretch'],
-                                    ])
+                        [
+                            'id' => transliteration($slide['name'])."_{$slide["id"]}",
+                            'img' => $slide['img'],
+                            'content' => $slide['content'],
+                            'img_stretch' => $slide['img_stretch'],
+                        ]
+                    )
 
                     @if(isset($slide['subparagraphs']) && !empty($slide['subparagraphs']))
                         @foreach($slide['subparagraphs'] as $subparagraph)
@@ -237,5 +292,5 @@
                 @endforeach
             </div>
         </div>
-    </div>        
+    </div>
 @endsection

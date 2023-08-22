@@ -14,7 +14,7 @@
 @php
     /**
      * dateInput string - date with format yyyy-mm-dd
-     * 
+     *
      */
     function getConvertedDate($dateInput) {
         $months = [
@@ -34,7 +34,7 @@
 
         $preConvertedDateInput = getDate(strtotime($dateInput));
 
-        $convertedDate = "{$preConvertedDateInput["mday"]} {$months[$preConvertedDateInput["month"]]} {$preConvertedDateInput["year"]} року"; 
+        $convertedDate = "{$preConvertedDateInput["mday"]} {$months[$preConvertedDateInput["month"]]} {$preConvertedDateInput["year"]} року";
 
         return $convertedDate;
     }
@@ -71,7 +71,7 @@
                 @if($report["is_active"] == 'true')
                     <div class="col-11 col-sm-9 col-md-8 col-xl-7 report-card mb-5 bg-white shadow rounded"
                         onclick="location.href='{{ route('report', $report['year']) }}';">
-                        <p class="mb-4">{{ $report['year'] }}</p>
+                        <p class="mb-2">{{ $report['year'] }}</p>
                         <p class="col-4 col-md-6" style="z-index: 30; position: absolute; font-weight: bolder">Опубліковано:<br> {{ getConvertedDate($report['published_at']) }}</p>
                         <img class="report-card-banner" src="{{ env('ADMIN_PANEL_URL').preg_replace('/public/', '/storage', $report['img_src']) }}"
                             alt="banner">

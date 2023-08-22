@@ -1,17 +1,20 @@
 let slides = document.querySelectorAll('.slide-container');
 let slideRation = 1.4 //a4 ration (1.4 - default)
+let presentationLoader = document.querySelector('.presentation-loader-holder');
 let slidesContainer = document.querySelector('.presentation-container');
-let elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]')
-let elementsWithResizablePadding = document.querySelectorAll('[paddingMultiplier]')
-let elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]')
-let elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]')
-let elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]')
-let elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMultiplier]')
-let elementWithCustomTopPosition = document.querySelectorAll('[cY]')
-let elementWithCustomLeftPosition = document.querySelectorAll('[cX]')
-let elementWithTransformTransition = document.querySelectorAll('[cAnchor]')
+let elementsWithResizableFont = document.querySelectorAll('[fontSizeMultiplier]');
+let elementsWithResizablePadding = document.querySelectorAll('[paddingMultiplier]');
+let elementsWithResizableBorder = document.querySelectorAll('[borderWidthMultiplier]');
+let elementsWithResizableWidth = document.querySelectorAll('[widthMultiplier]');
+let elementsWithResizableHeight = document.querySelectorAll('[heightMultiplier]');
+let elementWithCustomMarginBottom = document.querySelectorAll('[marginBottomMultiplier]');
+let elementWithCustomTopPosition = document.querySelectorAll('[cY]');
+let elementWithCustomLeftPosition = document.querySelectorAll('[cX]');
+let elementWithTransformTransition = document.querySelectorAll('[cAnchor]');
 
 window.onload = function () {
+    presentationLoader.remove();
+
     slides.forEach((e)=> {
         e.style.height = `${e.offsetWidth / slideRation}px`;
     })
@@ -24,7 +27,7 @@ window.onload = function () {
 
         e.childNodes.forEach((childNode)=>{
             childNode.style.fontSize = `${fontSizeUnit * fontSizeMultiplier}px`;
-        }) 
+        })
     })
 
     elementsWithResizableBorder.forEach(e => {

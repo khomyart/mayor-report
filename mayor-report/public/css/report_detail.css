@@ -147,7 +147,6 @@ Extra extra large	xxl	≥1400px
 }
 
 .container-fluid {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
 }
@@ -159,7 +158,6 @@ Extra extra large	xxl	≥1400px
 
 .chapter-map-element {
     padding: 13px 0;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     transition: transform 0.2s ease-in-out;
@@ -254,7 +252,6 @@ Extra extra large	xxl	≥1400px
 .question-mark-context-menu {
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 0;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 1.4rem 1.4rem 0.7rem;

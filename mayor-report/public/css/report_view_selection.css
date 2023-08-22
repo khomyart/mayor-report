@@ -10,7 +10,6 @@ Extra extra large	xxl	≥1400px
 @media (min-width: 0px){
     .view {
         flex-direction: column;
-        height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
         margin: 20px;
@@ -24,7 +23,6 @@ Extra extra large	xxl	≥1400px
 
     .view-container {
         flex-direction: column;
-        height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
         flex-wrap: nowrap;
@@ -111,7 +109,6 @@ Extra extra large	xxl	≥1400px
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: none;
-        -ms-user-select: none;
             user-select: none;
     cursor:pointer;
     display: flex;
@@ -120,18 +117,14 @@ Extra extra large	xxl	≥1400px
 .view-text p:nth-child(1){
     font-weight: 600;
     font-size: 1.8rem;
-    -webkit-animation-duration: 0.7s;
-            animation-duration: 0.7s;
-    -webkit-animation-name: fade-out;
-            animation-name: fade-out;
+    animation-duration: 0.7s;
+    animation-name: fade-out;
 }
 
 .view-text p:nth-child(2){
     opacity: 1;
-    -webkit-animation-duration: 0.7s;
-            animation-duration: 0.7s;
-    -webkit-animation-name: fade-out;
-            animation-name: fade-out;
+    animation-duration: 0.7s;
+    animation-name: fade-out;
 }
 
 .view:hover {
@@ -141,18 +134,6 @@ Extra extra large	xxl	≥1400px
 /*.view:hover .view-image{*/
 /*    transform: rotateY(180deg);*/
 /*}*/
-
-@-webkit-keyframes fade-out {
-    from {
-        transform: translate(0px,10px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translate(0,0);
-        opacity: 1;
-    }
-}
 
 @keyframes fade-out {
     from {
